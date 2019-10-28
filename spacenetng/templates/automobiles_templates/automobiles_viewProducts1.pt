@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Buy & Sell Products/Services</title>
+        <meta charset="UTF-8" />    <!--Character encoding.-->
+        <link type="text/css" rel="stylesheet"  href="${request.static_url('spacenetng:static/cssfiles/spacenetngCSS.css')}" />  <!--Linking to an external css file-->
+        <link type="text/css" rel="stylesheet" href="${request.static_url('spacenetng:static/tail.select/css/bootstrap4/tail.select-default.css')}"/>
+        <link type="image/png" rel="icon" href="${request.static_url('spacenetng:static/images/icon.png')}" sizes="200x200"/>
+        <link type="image/png" rel="apple-touch-icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/> <!--For apple devices-->
+    </head>
+    
+
+    <body>
+        <div id="time-date" class="container_12 clearfix">
+            <div class="time-borders grid_12">
+                <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+            </div>
+            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/live-clock.js')}"></script>
+        </div>
+        
+        
+    <div id="first-div" class="container_12 clearfix">   <!--Main 12_Column container-->
+            <div class="nav grid_12">
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="${request.static_url('spacenetng:static/mainnav/about.html')}">About</a>
+                    <a href="${request.static_url('spacenetng:static/mainnav/contact.html')}">Contact</a>
+                </nav>
+            </div>
+        
+        <br style="clear: both;"/>
+
+        <div id="second-div" class="grid_12">
+            <ul class="mainnav">
+                <li class="neww hassubs grid_3" ><a class="touchmen" href="#">Consumer Electronics</a>
+                    <ul class="dropdown">
+                        <li class="subs hassubs"><a href="#">Tvs & Home Theatres<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Laptops & Desktops<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Video Gaming Sets<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Airconditioners & Fridges<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="neww hassubs grid_3"><a class="touchmen" href="#">Automobiles & Motorcycles</a>
+                    <ul class="dropdown">
+                        <li class="subs hassubs"><a href="#">Cars, Vans & SUVs<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Uber<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Mechanic repairs<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="neww hassubs grid_3"><a class="touchmen" href="#">Housing, Events & Furnitures</a>
+                    <ul class="dropdown">
+
+                        <li class="subs hassubs"><a href="#">Rent an apartment<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Land, Home for sale<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Hotels<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Event Centers<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Decorations<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Catering<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="neww hassubs grid_3"><a class="touchmen" href="#">Fashion & Accessories</a>
+                    <ul class="dropdown">
+                        <li class="subs hassubs"><a href="#">Clothings & Head vests<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Shoes & Sandals<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Jewelries & Wristwatches<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Handbags & Wallets<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Perfumes & Colognes<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>                   
+
+            </ul>
+        </div>
+        <br style="clear: both;">
+
+       <!-- Slideshows -->
+       <div class="latest-news grid_12">
+            Latest News
+       </div>
+
+       <div class="flash-news grid_12">
+            <div class="crawler-text" style="font-weight:bold;">
+                *** Samsung new release in Phones:&nbsp;
+               <span class="Samsung">Galaxy Note10</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** HTC new release in Phones:&nbsp;
+               <span class="Hisense">HTC WildfireX</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** HP new release:&nbsp;
+               <span class="HP">HP Elite x360 PCs</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** Dell new release:&nbsp;
+               <span class="Dell">Inspiron 17 3000</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+       </div>
+       <br style="clear: both;">
+       <br>
+       <br>
+        
+
+        <!-- Landing Page Content -->
+        <div id="create-new-post" class="grid_12">
+
+            <form action="" method="post">
+            <p id="regionSel">Please select target region:</p>
+            <div class="box-n state-list">
+                <select id="mySelect" name="automobiles_view_statesList">
+                    <option value="0">Select province</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                    <option value="FCT Abuja">FCT Abuja</option>
+                </select>
+
+                <script type="text/javascript" src="${request.static_url('spacenetng:static/tail.select/js/tail.select.js')}"></script>
+                <!-- // This script below is used to customise the default html select element. -->
+                <script type="text/javascript">
+                    document.addEventListener("DOMContentLoaded", () => {
+                        tail.select("select", {search: true, width: 200,});
+                    });
+                </script>
+            </div>
+
+            <div hidden>
+                <div id="selectedFiles"></div>
+            </div>
+            <br>
+
+            <span style="font-size: 16px;">
+                Your Product's category:
+            </span>
+            <div class=" box-n category-list">
+              <label for="category1" class="container-radio2">Consumer Electronics
+              <input type="radio" id="category1"
+               name="automobiles_view_category" value="electronics" disabled>
+              <span class="checkmark-radio2"></span>
+              </label>
+              <br>
+
+              <label for="category2" class="container-radio2">Automobiles & Motorcycles
+              <input type="radio" id="category2"
+               name="automobiles_view_category" value="automobiles" checked>
+              <span class="checkmark-radio2"></span>
+              </label>
+              <br>
+
+              <label for="category3" class="container-radio2">Housing, Events & Furnitures
+              <input type="radio" id="category3"
+               name="automobiles_view_category" value="housing" disabled>
+              <span class="checkmark-radio2"></span>
+              </label>
+              <br>
+
+              <label for="category4" class="container-radio2">Fashion & Accessories
+              <input type="radio" id="category4"
+              name="automobiles_view_category" value="fashion" disabled>
+              <span class="checkmark-radio2"></span>
+              </label>
+            </div>
+            <br>
+
+
+            <span style="font-size: 16px;">
+                Item's condition:
+            </span>
+            <div class=" box-n itemConditions">
+              <label for="condition1" class="container-radio">New
+              <input type="radio" id="condition1"
+               name="automobiles_view_condition" value="New">
+              <span class="checkmark-radio"></span>
+              </label>
+              <br>
+
+              <label for="condition2" class="container-radio">Foreign Used
+              <input type="radio" id="condition2"
+               name="automobiles_view_condition" value="Foreign used">
+              <span class="checkmark-radio"></span>
+              </label>
+              <br>
+
+              <label for="condition3" class="container-radio">Locally Used
+              <input type="radio" id="condition3"
+               name="automobiles_view_condition" value="Locally used">
+              <span class="checkmark-radio"></span>
+              </label>
+              <br>
+
+              <label for="condition4A" class="container-radio">N/A
+              <input type="radio" id="condition4A"
+              name="automobiles_view_condition" value="NA" checked>
+              <span class="checkmark-radio"></span>
+              </label>
+            </div>
+              
+
+            <div class="box-n terms-conditions">
+                <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/embededScript1.js')}"></script>
+                <label for="checkbox1" class="container-checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox1" class="termscon" required onclick="mouseClick1()">
+                    Agree to our terms and conditions.
+                    <span class="checkmark-checkbox"></span>
+                </label>
+            </div>
+            <br>
+            
+            <div id="create">
+                <label for="final-submit">
+                    <input type="submit" value="View Products" id="final-submit" name="automobiles_view_submit">
+                </label>
+                <br/>
+                <span id="valid-region" hidden style="font-size: 18px; color: red;">Please select a valid region</span>
+            </div> 
+
+            </form>        
+        </div>
+        <br style="clear: both;">
+
+        <div id="footer">&copy;Copyright 2019 www.spacenetng.com 
+            <br />All Rights Reserved.
+        </div>    
+    </div>
+
+
+        <div class="right-wing-home">
+            <div class="customSearch">
+                This should contain a custom google search engine.
+            </div>
+            <!--spcaenetng connecting people..., a place where market users meet this 
+            should be a blinking slide, inside the "Place Holder-->  
+            <div class="ads">
+                <h2 id="cryptoPageLink-heading">
+                    Hello there! are you an investor in the Crypto industry?
+                </h2>       
+                Would you like to invest in one of the best blockchain projects in the cryptocurrency
+                world out there? you are in the right place, as i got you covered!!
+                <br>
+                <br>
+                <span id="cryptoPageLink-link"><a href="cryptoPageLink-link"><a href="${request.static_url('spacenetng:static/cryptocurrency/crypto_index.html')}">Click here to learn more &gt;&gt;&gt;</a></span>
+            </div>
+            <br>
+    
+            <div class="ads"><!--Forex Brokers--></div>
+            <br>
+    
+            <div class="ads ads-viewProducts-third"><!--Freelance, work from the comfort of your home.--> </div>
+            <br>      
+        </div>
+        
+    </body>
+
+</html>

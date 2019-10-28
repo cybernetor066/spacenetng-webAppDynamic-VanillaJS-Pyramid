@@ -1,0 +1,439 @@
+/* For the bigger slide */
+.slideshow-container {
+    position: relative;
+  }
+.slide-indicator{position: absolute; left: 250px;}
+.mySlides {display: none;}
+
+.slideshow-container h2{color: maroon;}
+
+.fade > img {
+  min-height: 329px !important; min-width: 700px !important;
+  max-height: 329px !important; max-width: 700px !important;
+  position: relative; margin-top: 5px;
+}
+
+/* Caption text and external website links*/
+.fade > .text  {
+  background: black;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-style: italic;
+  padding: 8px;
+  position: absolute;
+  bottom: 23px; left: 1px;
+  width: 423px;
+  text-align: left;
+}
+
+.fade > .more-info {
+  background: black;
+  position: absolute;
+  padding: 8px;
+  bottom: 23px; left: 445px;
+  width: 476;
+  text-align: right;
+}
+.fade .more-info > .more-info-text {
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+}
+.fade .more-info > a:hover {color: red;}
+
+
+/* Number text (Categories etc) */
+.numbertext {
+  color: maroon;
+  font-size: 20px;
+  position: absolute;
+  top: 11%;
+  border-bottom: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: darkgreen;
+}
+
+/* Fading animation */
+/* Creating the fading effect. No need for the transition properties here. */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+/* For the smaller slides */
+/* For smaller slide 1 */
+.slideshow-containerb1 {
+  position: relative;
+}
+.slide-indicatorb1{position: absolute; left: 140px;}
+.mySlidesb1 {display: none;}
+
+.fadeb1 > img {
+  min-height: 280px !important; min-width: 396px !important;
+  max-height: 280x !important; max-width: 396px !important;
+  position: relative; margin-top: 5px;
+}
+
+/* Caption text */
+.fadeb1 > .textb1 {
+  color: #f2f2f2;
+  font-style: italic;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px; left: -5%;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dotb1 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeb1 {
+  background-color: darkgreen;
+}
+
+/* Fading animation */
+/* Creating the fading effect. No need for the transition properties here. */
+.fadeb1 {
+  animation-name: fadeb1;
+  animation-duration: 3s;
+}
+
+@keyframes fadeb1 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .textb1 {font-size: 11px}
+}
+
+
+
+
+/* For smaller slide2 */
+.slideshow-containerb2 {
+  position: relative;
+}
+.slide-indicatorb2{position: absolute; left: 140px;}
+.mySlidesb2 {display: none;}
+
+.fadeb2 > img {
+  min-height: 280px !important; min-width: 396px !important;
+  max-height: 280x !important; max-width: 396px !important;
+  position: relative; margin-top: 5px;
+}
+
+/* Caption text */
+.fadeb2 > .textb2 {
+  color: #f2f2f2;
+  font-style: italic;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px; left: -5%;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dotb2 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeb2 {
+  background-color: darkgreen;
+}
+
+/* Fading animation */
+/* Creating the fading effect. No need for the transition properties here. */
+.fadeb2 {
+  animation-name: fadeb2;
+  animation-duration: 3s;
+}
+
+@keyframes fadeb2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .textb2 {font-size: 11px}
+}
+
+
+
+/* For smaller slide3 */
+.slideshow-containerb3 {
+  position: relative;
+}
+.slide-indicatorb3{position: absolute; left: 140px;}
+.mySlidesb3 {display: none;}
+
+.fadeb3 > img {
+  min-height: 280px !important; min-width: 396px !important;
+  max-height: 280x !important; max-width: 396px !important;
+  position: relative; margin-top: 5px;
+}
+
+/* Caption text */
+.fadeb3 > .textb3 {
+  color: #f2f2f2;
+  font-style: italic;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px; left: -5%;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dotb3 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeb3 {
+  background-color: darkgreen;
+}
+
+/* Fading animation */
+/* Creating the fading effect. No need for the transition properties here. */
+.fadeb3 {
+  animation-name: fadeb3;
+  animation-duration: 3s;
+}
+
+@keyframes fadeb3 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .textb3 {font-size: 11px}
+
+}
+
+
+
+/* For smaller slide4 */
+.slideshow-containerb4 {
+  position: relative;
+}
+.slide-indicatorb4{position: absolute; left: 140px;}
+.mySlidesb4 {display: none;}
+
+.fadeb4 > img {
+  min-height: 280px !important; min-width: 396px !important;
+  max-height: 280x !important; max-width: 396px !important;
+  position: relative; margin-top: 5px;
+}
+
+/* Caption text */
+.fadeb4 > .textb4 {
+  color: #f2f2f2;
+  font-style: italic;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px; left: -5%;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dotb4 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeb4 {
+  background-color: darkgreen;
+}
+
+/* Fading animation */
+/* Creating the fading effect. No need for the transition properties here. */
+.fadeb4 {
+  animation-name: fadeb4;
+  animation-duration: 3s;
+}
+
+@keyframes fadeb4 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .textb4 {font-size: 11px}
+}
+
+
+
+/* For smaller slide 5 */
+.slideshow-containerb5 {
+  position: relative;
+}
+.slide-indicatorb5{position: absolute; left: 140px;}
+.mySlidesb5 {display: none;}
+
+/* For the smaller slides */
+.fadeb5 > img {
+  min-height: 280px !important; min-width: 396px !important;
+  max-height: 280x !important; max-width: 396px !important;
+  position: relative; margin-top: 5px;
+}
+
+/* Caption text */
+.fadeb5 > .textb5 {
+  color: #f2f2f2;
+  font-style: italic;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px; left: -5%;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dotb5 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeb5 {
+  background-color: darkgreen;
+}
+
+/* Fading animation */
+/* Creating the fading effect. No need for the transition properties here. */
+.fadeb5 {
+  animation-name: fadeb5;
+  animation-duration: 3s;
+}
+
+@keyframes fadeb5 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .textb5 {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For the flash scrolling news other known as the Marques ticker */
+.flash-news {
+  background-color: brown; position: absolute;
+  color: whitesmoke; padding-right: -5px; padding-top: 5px;
+  padding-bottom: 5px; padding-left: 1px; top: 90px; left: 0%;
+  overflow: hidden; border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+  margin-left: 120px !important; max-width: 830px; min-height: 17px; margin-top: 4px;
+}
+
+.latest-news {
+  position: absolute; top: 90px; margin-top: 4px;
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.5);
+  padding: 5px; max-width: 100px;
+  background-color: brown; color: whitesmoke;
+}
+
+.crawler-text {
+  position: absolute; top: 12%; padding-top: 3px; min-width: 1500px; padding-right: 0%; padding-left: 0%;
+  transform: translateX(100%); /* Starting position */
+  animation: scroll-left 50s linear infinite; /* Apply animation to this element */
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Buy & Sell Products/Services</title>
+        <meta charset="UTF-8" />    <!--Character encoding.-->
+        <link type="text/css" rel="stylesheet"  href="${request.static_url('spacenetng:static/cssfiles/spacenetngCSS.css')}" />  <!--Linking to an external css file-->
+        <link type="image/png" rel="icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/>
+        <link type="image/png" rel="apple-touch-icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/> <!--For apple devices-->
+    </head>
+    
+
+    <body>
+        <div id="time-date" class="container_12 clearfix">
+            <div class="time-borders grid_12">
+                <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+            </div>
+            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/live-clock.js')}"></script>
+        </div>
+        
+        
+    <div id="first-div" class="container_12 clearfix">   <!--Main 12_Column container-->
+            <div class="nav grid_12">
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="${request.static_url('spacenetng:static/mainnav/about.html')}">About</a>
+                    <a href="${request.static_url('spacenetng:static/mainnav/contact.html')}">Contact</a>
+                </nav>
+            </div>
+        
+        <br style="clear: both;"/>
+
+        <div id="second-div" class="grid_12">
+                <ul class="mainnav">
+                    <li class="neww hassubs grid_3" ><a class="touchmen" href="#">Consumer Electronics</a>
+                        <ul class="dropdown">
+                            <li class="subs hassubs"><a href="#">Tvs & Home Theatres<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Laptops & Desktops<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Video Gaming Sets<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Airconditioners & Fridges<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="neww hassubs grid_3"><a class="touchmen" href="#">Automobiles & Motorcycles</a>
+                        <ul class="dropdown">
+                            <li class="subs hassubs"><a href="#">Cars, Vans & SUVs<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Uber<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Mechanic repairs<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="neww hassubs grid_3"><a class="touchmen" href="#">Housing, Events & Furnitures</a>
+                        <ul class="dropdown">
+
+                            <li class="subs hassubs"><a href="#">Rent an apartment<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Land, Home for sale<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Hotels<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Event Centers<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Decorations<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Catering<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="neww hassubs grid_3"><a class="touchmen" href="#">Fashion & Accessories</a>
+                        <ul class="dropdown">
+                            <li class="subs hassubs"><a href="#">Clothings & Head vests<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Shoes & Sandals<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Jewelries & Wristwatches<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Handbags & Wallets<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="subs hassubs"><a href="#">Perfumes & Colognes<span class="arrow-direction">&gt;&gt;</span></a>
+                                <ul class="demarcate dropdown">
+                                    <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                    <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                    <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    
+
+                </ul>
+        </div>
+       <br style="clear: both;"> 
+
+       <!-- Slideshows -->
+       <div class="latest-news grid_12">
+            Latest Releases
+       </div>
+
+       <div class="flash-news grid_12">
+            <div class="crawler-text" style="font-weight:bold;">
+                *** Samsung new release in Phones:&nbsp;
+               <span class="Samsung">Galaxy Note10</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** HTC new release in Phones:&nbsp;
+               <span class="Hisense">HTC WildfireX</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** HP new release:&nbsp;
+               <span class="HP">HP Elite x360 PCs</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** Dell new release:&nbsp;
+               <span class="Dell">Inspiron 17 3000</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+       </div>
+       <br style="clear: both;">
+       <br>
+       <br>
+
+
+        
+
+        <!-- Landing Page Content -->
+        <div id="main-content" class="grid_12">
+
+            <div class="categoriesPreview">
+                <h2>Latest Feeds</h2>
+                <div>
+                    <div class="views-left1">
+                        <div class="slideshow-containerb1">
+                            <div class="mySlidesb1 fadeb1">
+                                <img src="">
+                                <div class="textb1">Image one</div>
+                            </div>
+        
+                            <div class="mySlidesb1 fadeb1">
+                                <img src="">
+                                <div class="textb1">Image two</div>
+                            </div>
+        
+                            <div class="mySlidesb1 fadeb1">
+                                <img src="">
+                                <div class="textb1">Image 3</div>
+                            </div>
+
+                            <div class="mySlidesb1 fadeb1">
+                                <img src="">
+                                <div class="textb1">Image 4</div>
+                            </div>
+
+                            <div class="mySlidesb1 fadeb1">
+                                <img src="">
+                                <div class="textb1">Image 5</div>
+                            </div>
+                            <br>
+
+                            <div class="slide-indicatorb1">
+                                <span class="dotb1"></span> 
+                                <span class="dotb1"></span> 
+                                <span class="dotb1"></span>
+                                <span class="dotb1"></span>
+                                <span class="dotb1"></span> 
+                            </div>
+
+                            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb1.js')}"></script>
+                            
+                        </div>                        
+                    </div>
+
+                    <div class="views-right1-viewProducts">
+                        <span class="labels-view">Product ID:</span>
+                        <span class="seller-ID-view"></span>
+                        <br>
+                        <br>
+                        
+                        <span class="labels-view">Individual/Company name:</span>
+                        <span class="seller-name-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Location:</span>
+                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Description:</span>
+                        <br>
+                        <span class="item-description-view">
+                        </span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Phone:</span>
+                        <span class="seller-phone-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Email:</span>
+                        <span class="seller-email-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Category:</span>
+                        <span class="seller-category-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Condition:</span>
+                        <span class="seller-condition-view"></span>
+                    </div>                    
+                </div>
+                <br>
+
+
+
+                <div>
+                    <div class="views-left1">
+                        <div class="slideshow-containerb2">
+                            <div class="mySlidesb2 fadeb2">
+                                <img src="">
+                                <div class="textb2">Image one</div>
+                            </div>
+        
+                            <div class="mySlidesb2 fadeb2">
+                                <img src="">
+                                <div class="textb2">Image two</div>
+                            </div>
+        
+                            <div class="mySlidesb2 fadeb2">
+                                <img src="">
+                                <div class="textb2">Image 3</div>
+                            </div>
+
+                            <div class="mySlidesb2 fadeb2">
+                                <img src="">
+                                <div class="textb2">Image 4</div>
+                            </div>
+
+                            <div class="mySlidesb2 fadeb2">
+                                <img src="">
+                                <div class="textb2">Image 5</div>
+                            </div>
+                            <br>
+
+                            <div class="slide-indicatorb2">
+                                <span class="dotb2"></span> 
+                                <span class="dotb2"></span> 
+                                <span class="dotb2"></span>
+                                <span class="dotb2"></span>
+                                <span class="dotb2"></span> 
+                            </div>
+
+                            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb2.js')}"></script>
+                            
+                        </div>                        
+                    </div>
+
+                    <div class="views-right2-viewProducts">
+                        <span class="labels-view">Product ID:</span>
+                        <span class="seller-ID-view"></span>
+                        <br>
+                        <br>
+                        
+                        <span class="labels-view">Individual/Company name:</span>
+                        <span class="seller-name-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Location:</span>
+                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Description:</span>
+                        <br>
+                        <span class="item-description-view">
+                        </span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Phone:</span>
+                        <span class="seller-phone-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Email:</span>
+                        <span class="seller-email-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Category:</span>
+                        <span class="seller-category-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Condition:</span>
+                        <span class="seller-condition-view"></span>
+                    </div>                    
+                </div>
+                <br>
+
+
+                <div>
+                    <div class="views-left1">
+                        <div class="slideshow-containerb3">
+                            <div class="mySlidesb3 fadeb3">
+                                <img src="">
+                                <div class="textb3">Image one</div>
+                            </div>
+        
+                            <div class="mySlidesb3 fadeb3">
+                                <img src="">
+                                <div class="textb3">Image two</div>
+                            </div>
+        
+                            <div class="mySlidesb3 fadeb3">
+                                <img src="">
+                                <div class="textb3">Image 3</div>
+                            </div>
+
+                            <div class="mySlidesb3 fadeb3">
+                                <img src="">
+                                <div class="textb3">Image 4</div>
+                            </div>
+
+                            <div class="mySlidesb3 fadeb3">
+                                <img src="">
+                                <div class="textb3">Image 5</div>
+                            </div>
+                            <br>
+
+                            <div class="slide-indicatorb3">
+                                <span class="dotb3"></span> 
+                                <span class="dotb3"></span> 
+                                <span class="dotb3"></span>
+                                <span class="dotb3"></span>
+                                <span class="dotb3"></span> 
+                            </div>
+
+                            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb3.js')}"></script>
+                            
+                        </div>                        
+                    </div>
+
+                    <div class="views-right3-viewProducts">
+                        <span class="labels-view">Product ID:</span>
+                        <span class="seller-ID-view"></span>
+                        <br>
+                        <br>
+                        
+                        <span class="labels-view">Individual/Company name:</span>
+                        <span class="seller-name-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Location:</span>
+                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Description:</span>
+                        <br>
+                        <!-- Test for maximum rows and columns and edit in the create-post form page. -->
+                        <span class="item-description-view">
+                        </span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Phone:</span>
+                        <span class="seller-phone-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Email:</span>
+                        <span class="seller-email-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Category:</span>
+                        <span class="seller-category-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Condition:</span>
+                        <span class="seller-condition-view"></span>
+                    </div>                    
+                </div>
+                <br>
+
+
+                <div>
+                    <div class="views-left1">
+                        <div class="slideshow-containerb4">
+                            <div class="mySlidesb4 fadeb4">
+                                <img src="">
+                                <div class="textb4">Image one</div>
+                            </div>
+        
+                            <div class="mySlidesb4 fadeb4">
+                                <img src="">
+                                <div class="textb4">Image two</div>
+                            </div>
+        
+                            <div class="mySlidesb4 fadeb4">
+                                <img src="">
+                                <div class="textb4">Image 3</div>
+                            </div>
+
+                            <div class="mySlidesb4 fadeb4">
+                                <img src="">
+                                <div class="textb4">Image 4</div>
+                            </div>
+
+                            <div class="mySlidesb4 fadeb4">
+                                <img src="">
+                                <div class="textb4">Image 5</div>
+                            </div>
+                            <br>
+
+                            <div class="slide-indicatorb4">
+                                <span class="dotb4"></span> 
+                                <span class="dotb4"></span> 
+                                <span class="dotb4"></span>
+                                <span class="dotb4"></span>
+                                <span class="dotb4"></span> 
+                            </div>
+
+                            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb4.js')}"></script>
+                            
+                        </div>                        
+                    </div>
+
+                    <div class="views-right4-viewProducts">
+                        <span class="labels-view">Product ID:</span>
+                        <span class="seller-ID-view"></span>
+                        <br>
+                        <br>
+                        
+                        <span class="labels-view">Individual/Company name:</span>
+                        <span class="seller-name-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Location:</span>
+                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Description:</span>
+                        <br>
+                        <span class="item-description-view">
+                        </span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Phone:</span>
+                        <span class="seller-phone-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Email:</span>
+                        <span class="seller-email-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Category:</span>
+                        <span class="seller-category-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Condition:</span>
+                        <span class="seller-condition-view"></span>
+                    </div>                    
+                </div>
+                <br/>
+
+                <div>
+                    <div class="views-left1">
+                        <div class="slideshow-containerb5">
+                            <div class="mySlidesb5 fadeb5">
+                                <img src="">
+                                <div class="textb5">Image one</div>
+                            </div>
+        
+                            <div class="mySlidesb5 fadeb5">
+                                <img src="">
+                                <div class="textb5">Image two</div>
+                            </div>
+        
+                            <div class="mySlidesb5 fadeb5">
+                                <img src="">
+                                <div class="textb5">Image 3</div>
+                            </div>
+
+                            <div class="mySlidesb5 fadeb5">
+                                <img src="">
+                                <div class="textb5">Image 4</div>
+                            </div>
+
+                            <div class="mySlidesb5 fadeb5">
+                                <img src="">
+                                <div class="textb5">Image 5</div>
+                            </div>
+                            <br>
+
+                            <div class="slide-indicatorb5">
+                                <span class="dotb5"></span> 
+                                <span class="dotb5"></span> 
+                                <span class="dotb5"></span>
+                                <span class="dotb5"></span>
+                                <span class="dotb5"></span> 
+                            </div>
+
+                            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb5.js')}"></script>
+                            
+                        </div>                        
+                    </div>
+
+                    <div class="views-right5-viewProducts">
+                        <span class="labels-view">Product ID:</span>
+                        <span class="seller-ID-view"></span>
+                        <br>
+                        <br>
+                        
+                        <span class="labels-view">Individual/Company name:</span>
+                        <span class="seller-name-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Location:</span>
+                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Description:</span>
+                        <br>
+                        <!-- Test for maximum rows and columns and edit in the create-post form page. -->
+                        <span class="item-description-view">
+                        </span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Phone:</span>
+                        <span class="seller-phone-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Email:</span>
+                        <span class="seller-email-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Category:</span>
+                        <span class="seller-category-view"></span>
+                        <br>
+                        <br>
+
+                        <span class="labels-view">Item's Condition:</span>
+                        <span class="seller-condition-view"></span>
+                    </div>                    
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <span class="pagees-enclose">Pages
+            <span>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="/fashion_viewProducts2_page1">1</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="/fashion_viewProducts2_page2">2</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="/fashion_viewProducts2_page3">3</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; <span class="no-decoration">4</span>
+                &nbsp;&nbsp;&nbsp;&nbsp; <a href="/fashion_viewProducts2_page5">5</a>
+            </span>
+        </span>
+        <br>
+        <br style="clear: both;">
+        <br/>
+        <br/>     
+
+        <div id="footer">&copy;Copyright 2019 www.spacenetng.com 
+            <br />All Rights Reserved.
+        </div>    
+    </div>
+
+    
+    
+    
+    
+    
+    
+    <div class="right-wing-home">
+        <div class="customSearch">
+            This should contain a custom google search engine.
+        </div>
+        <!--spcaenetng connecting people..., a place where market users meet this 
+        should be a blinking slide, inside the "Place Holder-->  
+        <div class="ads-home">
+            <h2 id="cryptoPageLink-heading">
+                Hello there! are you an investor in the Crypto industry?
+            </h2>       
+            Would you like to invest in one of the best blockchain projects in the cryptocurrency
+            world out there? you are in the right place, as i got you covered!!
+            <br>
+            <br>
+            <span id="cryptoPageLink-link"><a href="${request.static_url('spacenetng:static/cryptocurrency/crypto_index.html')}">Click here to learn more &gt;&gt;&gt;</a></span>
+        </div>
+
+
+        <div class="ads-home"><!--Forex Brokers--></div>
+        <br>
+
+        <div class="ads-home"><!--Aliexpress--></div>
+        <br>
+
+        <div class="ads-home"><!--Freelance, work from home--></div>
+        <br>
+
+        <div class="ads-home"><!--Ebay--></div>
+        <br>
+
+        <div class="ads-home"><!--Jumia--></div>
+        <br>
+
+        <div class="ads-home"><!--MongoDB--></div>
+        <br>
+        
+        <div class="ads-home"><!--Betting site1--></div>
+        <br>
+                
+        <div class="ads-home-last"><!--Betting site1--></div>
+    </div>
+        
+    </body>
+
+</html>

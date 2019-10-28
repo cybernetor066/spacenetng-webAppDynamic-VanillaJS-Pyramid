@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Buy & Sell Products/Services</title>
+        <meta charset="UTF-8" />    <!--Character encoding.-->
+        <link type="text/css" rel="stylesheet"  href="${request.static_url('spacenetng:static/cssfiles/spacenetngCSS.css')}" />  <!--Linking to an external css file-->
+        <link type="text/css" rel="stylesheet" href="${request.static_url('spacenetng:static/tail.select/css/bootstrap4/tail.select-default.css')}"/>
+        <link type="image/png" rel="icon" href="${request.static_url('spacenetng:static/images/icon.png')}" sizes="200x200"/>
+        <link type="image/png" rel="apple-touch-icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/> <!--For apple devices-->
+    </head>
+    
+
+    <body>
+        <div id="time-date" class="container_12 clearfix">
+            <div class="time-borders grid_12">
+                <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+            </div>
+            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/live-clock.js')}"></script>
+        </div>
+        
+        
+    <div id="first-div" class="container_12 clearfix">   <!--Main 12_Column container-->
+            <div class="nav grid_12">
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="${request.static_url('spacenetng:static/mainnav/about.html')}">About</a>
+                    <a href="${request.static_url('spacenetng:static/mainnav/contact.html')}">Contact</a>
+                </nav>
+            </div>
+        
+        <br style="clear: both;"/>
+
+        <div id="second-div" class="grid_12">
+            <ul class="mainnav">
+                <li class="neww hassubs grid_3" ><a class="touchmen" href="#">Consumer Electronics</a>
+                    <ul class="dropdown">
+                        <li class="subs hassubs"><a href="#">Tvs & Home Theatres<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Laptops & Desktops<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Video Gaming Sets<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Airconditioners & Fridges<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/electronics_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/electronics_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/electronics_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="neww hassubs grid_3"><a class="touchmen" href="#">Automobiles & Motorcycles</a>
+                    <ul class="dropdown">
+                        <li class="subs hassubs"><a href="#">Cars, Vans & SUVs<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Uber<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Mechanic repairs<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/automobiles_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/automobiles_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/automobiles_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="neww hassubs grid_3"><a class="touchmen" href="#">Housing, Events & Furnitures</a>
+                    <ul class="dropdown">
+
+                        <li class="subs hassubs"><a href="#">Rent an apartment<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Land, Home for sale<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Hotels<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Event Centers<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Decorations<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Catering<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/housing_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/housing_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/housing_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="neww hassubs grid_3"><a class="touchmen" href="#">Fashion & Accessories</a>
+                    <ul class="dropdown">
+                        <li class="subs hassubs"><a href="#">Clothings & Head vests<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Shoes & Sandals<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Jewelries & Wristwatches<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Handbags & Wallets<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="subs hassubs"><a href="#">Perfumes & Colognes<span class="arrow-direction">&gt;&gt;</span></a>
+                            <ul class="demarcate dropdown">
+                                <li class="subs"><a href="/fashion_createNewPost">Create new post</a></li>
+                                <li class="subs"><a href="/fashion_modifyPost1">Modify post</a></li>
+                                <li class="subs"><a href="/fashion_viewProducts1">View Products</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>                   
+
+            </ul>
+        </div>
+        <br style="clear: both;">
+
+       <!-- Slideshows -->
+       <div class="latest-news grid_12">
+            Latest News
+       </div>
+
+       <div class="flash-news grid_12">
+            <div class="crawler-text" style="font-weight:bold;">
+                *** Samsung new release in Phones:&nbsp;
+               <span class="Samsung">Galaxy Note10</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** HTC new release in Phones:&nbsp;
+               <span class="Hisense">HTC WildfireX</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** HP new release:&nbsp;
+               <span class="HP">HP Elite x360 PCs</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               *** Dell new release:&nbsp;
+               <span class="Dell">Inspiron 17 3000</span> ***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+       </div>
+       <br style="clear: both;">
+       <br>
+       <br>
+        
+
+        <!-- Landing Page Content -->
+        <div class="grid_12 modifyPost1-body">
+        <form action="" method="POST">
+            <div>
+                <br>
+                <br>
+                <span id="mod1a">
+                    Enter your product ID sent to your
+                    <br>
+                    email during the time of the first post:
+                </span>
+                <label for="productIDa" class="pushInput-right1">
+                    <input type="text" id="productIDa" name="electronics_modify1_productIDa" required>
+                </label>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+                <span id="mod1b">
+                    Enter Phone number associated
+                    <br>
+                    with your product ID:
+                </span>
+                <label for="productIDb" class="pushInput-right2">
+                    <input type="text" pattern="[0-9]+" id="productIDb" name="electronics_modify1_productIDb" required>
+                </label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="terms-conditions-modify1">
+                <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/embededScript1.js')}"></script>
+                <label for="checkbox2" class="container-checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox2" class="termscon" required onclick="mouseClick2()">
+                    Agree to our terms and conditions.
+                    <span class="checkmark-checkbox"></span>
+                </label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+             <div id="modify1Submit">               
+                <div id="update-delete">
+                    <span>&gt;&gt;&gt; &nbsp;&nbsp;</span>
+                    <label for="update">
+                        <input type="submit" value="Edit" id="update" name="electronics_modify1_editButton">
+                    </label>
+                    <label for="delete">
+                        <input type="submit" value="Delete" id="delete" name="electronics_modify1_deleteButton">
+                    </label>
+                </div>
+            </div>
+        </form>
+        </div>
+
+        <div id="footer">&copy;Copyright 2019 www.spacenetng.com 
+            <br />All Rights Reserved.
+        </div>
+
+    </div>
+
+    <div class="right-wing-home">
+        <div class="customSearch">
+            This should contain a custom google search engine.
+        </div>
+        <!--spcaenetng connecting people..., a place where market users meet this 
+        should be a blinking slide, inside the "Place Holder-->  
+        <div class="ads">
+            <h2 id="cryptoPageLink-heading">
+                Hello there! are you an investor in the Crypto industry?
+            </h2>       
+            Would you like to invest in one of the best blockchain projects in the cryptocurrency
+            world out there? you are in the right place, as i got you covered!!
+            <br>
+            <br>
+            <span id="cryptoPageLink-link"><a href="cryptoPageLink-link"><a href="${request.static_url('spacenetng:static/cryptocurrency/crypto_index.html')}">Click here to learn more &gt;&gt;&gt;</a></span>
+        </div>
+        <br>
+
+        <div class="ads"><!--Forex Brokers--></div>
+        <br>
+
+        <div class="ads"><!--Freelance, work from the comfort of your home.--> </div>
+        <br>
+    </div>  
+        
+   </body>
+
+</html>

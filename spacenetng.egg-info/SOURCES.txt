@@ -1,0 +1,7 @@
+setup.py
+spacenetng.egg-info/PKG-INFO
+spacenetng.egg-info/SOURCES.txt
+spacenetng.egg-info/dependency_links.txt
+spacenetng.egg-info/entry_points.txt
+spacenetng.egg-info/requires.txt
+spacenetng.egg-info/top_level.txt

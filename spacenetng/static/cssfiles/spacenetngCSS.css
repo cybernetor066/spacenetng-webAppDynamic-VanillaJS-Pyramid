@@ -1,0 +1,247 @@
+/* Insert your comments here! */
+@import url("autoManualSlides.css");
+@import url("960_12_col.css");
+@import url("hyperLinkPages.css");
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 2px;
+    display: inline;
+}
+
+#time-date {
+    border-left: 5px;
+    border-right: 5px;
+    color: red;
+}
+.time-borders {
+  border-bottom: solid;
+  border-bottom-color: whitesmoke;
+}
+
+
+
+
+/* Adjusting space between <p> elements */
+p[class="paragraph"] {
+  margin-top: -0.5em;
+}
+
+
+h2 {
+  color: maroon;
+}
+a {
+    color: black;
+}
+
+
+.nav {
+  background-color: darkblue;
+}
+.nav a {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 17px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 120px;
+}
+.nav a:hover {
+  font-style: italic;
+}
+
+
+#main-content {
+    padding: 5px;
+}
+
+
+.right-wing {
+  position: absolute;
+  left: 99.2%; top: 20px; background-color: lightgrey;
+  width: 350px;
+}
+
+.right-wing-home {
+  position: absolute;
+  left: 99.2%; top: 20px; background-color: lightgrey;
+  width: 350px;
+}
+
+.customSearch{background-color: darkmagenta; min-height: 38px; padding-top: 10px; }
+
+.ads {
+border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
+padding-left: 3px; max-height: 168.5px;
+}
+.ads-home {
+  border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
+  padding-left: 3px; max-height: 175px;
+  }
+
+.ads-home-last {
+  border-top: solid 5px white; margin-top: 5px; min-height: 280px;
+  padding-left: 3px; max-height: 280px;
+  }
+
+.ads-viewProducts-third{min-height: 100px !important; min-height: 100px !important;}
+
+
+/* All customisations for right wing elements. */
+#cryptoPageLink-heading {color: black;}
+/* #textAlign-left{text-align: left;} */
+#cryptoPageLink-link {font-style: italic;}
+#cryptoPageLink-link:hover a {color: red;}
+.modifyPost1-body{
+  background-color: black; color: lightslategray;
+  min-height: 520px; padding-left: 2px;
+}
+.aboutMainBody{
+  background-color: lightgrey; border-right: 4px black solid;
+  min-height: 520px; padding-left: 2px; max-width: 935px;
+}
+#modify1Submit{text-align: center; color: limegreen;}
+.pushInput-right1{position: absolute; left: 300px; top: 155px;}
+.pushInput-right2{position: absolute; left: 300px; top: 230px;}
+#mod1a, #mod1b{font-size: 16px;}
+#phone-contact-contact, #email-contact-contact, #twitter-contact-contact{
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.labels-view{font-weight: bold;}
+
+/* For index or home page */
+.views-right1{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 606px; border-bottom: solid grey;
+}
+
+.views-right2{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 951px; border-bottom: solid grey
+}
+.views-right3{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 1296px; border-bottom: solid grey
+}
+.views-right4{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 1641px; border-bottom: solid grey
+}
+
+/* For Category pages */
+.views-right1-viewProducts{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 186px; border-bottom: solid grey;
+}
+
+.views-right2-viewProducts{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 531px; border-bottom: solid grey
+}
+.views-right3-viewProducts{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 876px; border-bottom: solid grey
+}
+.views-right4-viewProducts{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 1221px; border-bottom: solid grey
+}
+.views-right5-viewProducts{
+  background-color: rgb(143, 185, 143);
+  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
+  position: absolute; left: 415px; top: 1566px; border-bottom: solid grey
+}
+
+
+/* For both home page and category page */
+.views-left1{
+  background-color: lightgrey;
+  max-width: 400px; min-height: 325px; border-bottom: solid grey;
+}
+
+
+#footer {
+  text-align: center;
+}
+
+.arrow-direction {
+  visibility: hidden;
+}
+.mainnav li ul li:hover .arrow-direction {
+  visibility: visible;
+  color: white;
+  float: right !important;
+}
+
+
+      /*General Menu Styling*/
+      .mainnav{margin: 2px auto; margin-bottom: 5px; padding-left: 0%;}
+      li{list-style: none;}
+      li a{text-decoration: none;}
+      .dropdown{position: absolute; width: 150px;top: 41px; opacity: 0;visibility: hidden;}
+      .mainnav li{float: left; padding: 5px; background: white; border-left: 1px;}
+      .mainnav li:first-child{border: none;}
+      .mainnav li a{ display: block; padding:5px; color: black; font-family: arial;}
+      .touchmen{font-style: block; text-align: center;}
+      .touchmen:hover{border-bottom: solid;}
+      .mainnav li:hover .touchmen{border-bottom: solid !important;}
+
+               /* hovering on li elements inside mainav class */
+      .mainnav li:hover{background: darkblue;}
+      .mainnav li:hover a{color: whitesmoke;}
+     
+    
+      /*First Level*/
+      .subs {
+        left: -45px;position: relative; top: 0px;width: 220px; border-left: none !important;  
+        /* 175px for width if its to be reverted back */
+        border-bottom: 1px solid whitesmoke !important; background-color: darkblue !important;
+      }
+      .subs:last-child{border: none !important;}
+
+              /* hassubs hovering */
+      .hassubs:hover .dropdown,.hassubs .hassubs:hover .dropdown {
+        opacity: 1;visibility: visible;
+        transition: ease-in .75s;
+      }
+      .mainnav li:hover ul a,.mainnav li:hover ul li ul li a{color: white;}
+      .mainnav li ul li:hover,.mainnav li ul li ul li:hover{background-color: maroon !important;}
+      .mainnav li ul li:hover a,.mainnav li ul li ul li:hover a{color: whitesmoke}
+      
+
+       /* This box gave me a little tough time to crack! */
+      .demarcate {margin-left: 2px;}
+      .neww {
+        background-color: whitesmoke !important; border-right: solid darkmagenta 5px !important;
+        margin-left: 0px; margin-right: 0px;
+      } 
+      .neww:hover{background-color: darkblue !important;}
+      
+      #second-div{display: inline; position: absolute; z-index: 1; padding-left: 0%;}
+      #first-div{z-index: 2; position: relative;}
+
+
+
+
+
+      /*Second Level*/
+      .hassubs .hassubs .dropdown .subs{left: 25px;position: relative;width: 165px;top: 0px;}
+      .hassubs .hassubs .dropdown {
+        position: absolute;width: 150px;left: 165px;top: 0px;opacity: 0;
+        visibility: hidden; border-left-color: white;
+        transition: ease-in .75s; transition: ease-out .1s;
+      }
