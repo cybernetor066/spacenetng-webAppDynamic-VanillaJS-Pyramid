@@ -5,6 +5,7 @@ requires = [
     'pyramid',
     'pyramid_chameleon',
     'waitress',
+    'gunicorn',
     'pymongo'
 ]
 

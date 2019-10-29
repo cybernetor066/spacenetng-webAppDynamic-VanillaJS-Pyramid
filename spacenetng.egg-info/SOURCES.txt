@@ -1,3 +1,4 @@
+README
 setup.py
 spacenetng.egg-info/PKG-INFO
 spacenetng.egg-info/SOURCES.txt
