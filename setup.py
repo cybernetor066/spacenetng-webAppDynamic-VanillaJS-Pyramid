@@ -14,7 +14,6 @@ requires = [
 # by virtue of the setuptools `extras_require` value in the python
 # dictionary below.
 dev_requires = [
-    'pyramid_debugtoolbar',
     'pytest',
     'webtest',
 ]

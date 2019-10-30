@@ -1,3 +1,5 @@
+import site
+site.addsitedir('/home/cybernetor066/Desktop/Software-IT-Web-Dev/GIT-Repos/spacenetng-webApps/Back-End/spacenetng_venv1/lib/python3.5/site-packages')
 import os
 from plaster_pastedeploy import loadapp
 from waitress import serve
