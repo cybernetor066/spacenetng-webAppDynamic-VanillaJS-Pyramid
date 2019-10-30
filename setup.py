@@ -3,7 +3,6 @@ from setuptools import setup
 # by virtue of the Setuptools `install_requires` value below.
 requires = [
     'pyramid',
-    'paste',
     'plaster_pastedeploy',
     'pyramid_chameleon',
     'waitress',

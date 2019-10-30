@@ -1,6 +1,5 @@
 import os
-import paste.deploy
-from paste.deploy import loadapp
+from plaster_pastedeploy import loadapp
 from waitress import serve
 
 if __name__ == "__main__":
