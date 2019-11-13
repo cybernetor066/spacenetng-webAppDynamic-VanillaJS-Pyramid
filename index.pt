@@ -188,7 +188,7 @@
 
        <!-- Slideshows -->
        <div class="latest-news grid_12">
-            Latest
+            Latest12
        </div>
 
        <div class="flash-news grid_12">
@@ -377,7 +377,7 @@
         <div id="main-content" class="grid_12">
 
             <div class="categoriesPreview">
-                <h2>Latest Feeds</h2>
+                <h2>Latest Feeds</h2>   
                 <div>
                     <div class="views-left1">
                         <div class="slideshow-containerb1">

@@ -8,7 +8,8 @@ body {
     color: black;
     position: absolute;
     left: 2px;
-    display: inline;
+    height: 100%;
+    /* display: block; */
 }
 
 #time-date {
@@ -20,7 +21,6 @@ body {
   border-bottom: solid;
   border-bottom-color: whitesmoke;
 }
-
 
 
 
@@ -119,23 +119,23 @@ padding-left: 3px; max-height: 168.5px;
 .views-right1{
   background-color: rgb(143, 185, 143);
   max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 606px; border-bottom: solid grey;
+  position: absolute; left: 415px; top: 30.97%; border-bottom: solid grey;
 }
 
 .views-right2{
   background-color: rgb(143, 185, 143);
   max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 951px; border-bottom: solid grey
+  position: absolute; left: 415px; top: 47.95%; border-bottom: solid grey
 }
 .views-right3{
   background-color: rgb(143, 185, 143);
   max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 1296px; border-bottom: solid grey
+  position: absolute; left: 415px; top: 64.95%; border-bottom: solid grey
 }
 .views-right4{
   background-color: rgb(143, 185, 143);
   max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 1641px; border-bottom: solid grey
+  position: absolute; left: 415px; top: 81.95%; border-bottom: solid grey
 }
 
 /* For Category pages */
@@ -177,6 +177,12 @@ padding-left: 3px; max-height: 168.5px;
 #footer {
   text-align: center;
 }
+
+
+/* OverLapping rectification */
+
+
+
 
 .arrow-direction {
   visibility: hidden;
