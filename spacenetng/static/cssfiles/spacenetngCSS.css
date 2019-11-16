@@ -69,15 +69,15 @@ a {
   width: 350px;
 }
 
-.customSearch{background-color: darkmagenta; min-height: 38px; padding-top: 10px; }
+.customSearch{background-color: darkmagenta; height: 38px; padding: 8px; }
 
 .ads {
 border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
-padding-left: 3px; max-height: 168.5px;
+padding-left: 3px;
 }
 .ads-home {
   border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
-  padding-left: 3px; max-height: 175px;
+  padding-left: 3px;
   }
 
 .ads-home-last {
@@ -114,51 +114,51 @@ padding-left: 3px; max-height: 168.5px;
 /* For index or home page */
 .views-right1{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
 .views-right2{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right3{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right4{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
 /* For Category pages */
 .views-right1-viewProducts{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
 .views-right2-viewProducts{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right3-viewProducts{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right4-viewProducts{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right5-viewProducts{
   background-color: rgb(143, 185, 143);
-  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  min-width: 525px; max-width: 525px; min-height: 325px;
   border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
@@ -167,7 +167,7 @@ padding-left: 3px; max-height: 168.5px;
 .views-left1{
   background-color: lightgrey;
   min-width: 400px; max-width: 400px;
-  min-height: 325px; max-height: 325px; 
+  min-height: 325px; 
   border-bottom: solid whitesmoke; border-right: solid grey;
 
   /* Join left and right views together, add a demarcation color in btw them */
