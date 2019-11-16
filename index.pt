@@ -3,6 +3,7 @@
     <head>
         <title>Buy & Sell Products/Services</title>
         <meta charset="UTF-8" />    <!--Character encoding.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link type="text/css" rel="stylesheet"  href="${request.static_url('spacenetng:static/cssfiles/spacenetngCSS.css')}" />  <!--Linking to an external css file-->
         <link type="image/png" rel="icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/>
         <link type="image/png" rel="apple-touch-icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/> <!--For apple devices-->

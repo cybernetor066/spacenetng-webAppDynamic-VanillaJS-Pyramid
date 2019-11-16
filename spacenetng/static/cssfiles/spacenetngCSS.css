@@ -59,13 +59,13 @@ a {
 
 .right-wing {
   position: absolute;
-  left: 99.2%; top: 3%; background-color: lightgrey;
+  left: 99.2%; top: 20px; background-color: lightgrey;
   width: 350px;
 }
 
 .right-wing-home {
   position: absolute;
-  left: 99.2%; top: 3%; background-color: lightgrey;
+  left: 99.2%; top: 20px; background-color: lightgrey;
   width: 350px;
 }
 
