@@ -113,10 +113,10 @@
   color: #f2f2f2;
   font-style: italic;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 3px;
   position: absolute;
-  bottom: 15px; left: -5%;
-  width: 100%;
+  bottom: 23px; left: 35%;
+  background: black;
   text-align: center;
 }
 
@@ -174,10 +174,10 @@
   color: #f2f2f2;
   font-style: italic;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 3px;
   position: absolute;
-  bottom: 15px; left: -5%;
-  width: 100%;
+  bottom: 23px; left: 35%;
+  background: black;
   text-align: center;
 }
 
@@ -215,7 +215,6 @@
 }
 
 
-
 /* For smaller slide3 */
 .slideshow-containerb3 {
   position: relative;
@@ -234,10 +233,10 @@
   color: #f2f2f2;
   font-style: italic;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 3px;
   position: absolute;
-  bottom: 15px; left: -5%;
-  width: 100%;
+  bottom: 23px; left: 35%;
+  background: black;
   text-align: center;
 }
 
@@ -295,10 +294,10 @@
   color: #f2f2f2;
   font-style: italic;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 3px;
   position: absolute;
-  bottom: 15px; left: -5%;
-  width: 100%;
+  bottom: 23px; left: 35%;
+  background: black;
   text-align: center;
 }
 
@@ -356,10 +355,10 @@
   color: #f2f2f2;
   font-style: italic;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 3px;
   position: absolute;
-  bottom: 15px; left: -5%;
-  width: 100%;
+  bottom: 23px; left: 35%;
+  background: black;
   text-align: center;
 }
 
@@ -395,12 +394,6 @@
 @media only screen and (max-width: 300px) {
   .textb5 {font-size: 11px}
 }
-
-
-
-
-
-
 
 
 

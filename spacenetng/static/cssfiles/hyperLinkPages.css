@@ -21,7 +21,7 @@
 .view-more-products > a{color: blue;}
 .view-more-products > a:hover {color: brown;}
 
-.pagees-enclose {position: absolute; left: 386px; top: 1900px; color: blue;}
+.pagees-enclose {color: blue;}
 .pagees-enclose span > a {color: blue;}
 .pagees-enclose span > a:hover {color: brown;}
 .pagees-enclose span > .no-decoration{color: black;}
@@ -45,8 +45,10 @@ input[type=file] {
 }
 .contacta-z{font-size: 17px;}
 
+
 .product-description ::placeholder {
     font-size: 14px; min-height: 140px;
+    max-width: 200px;
 }
 
 .terms-conditions {padding-bottom: 6px;}

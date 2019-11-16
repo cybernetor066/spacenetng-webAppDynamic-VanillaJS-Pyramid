@@ -188,7 +188,7 @@
 
        <!-- Slideshows -->
        <div class="latest-news grid_12">
-            Latest12
+            Latest
        </div>
 
        <div class="flash-news grid_12">
@@ -375,11 +375,10 @@
 
         <!-- Landing Page Content -->
         <div id="main-content" class="grid_12">
-
-            <div class="categoriesPreview">
-                <h2>Latest Feeds</h2>   
+            <h2>Latest Feeds</h2>
+            <div class="categoriesPreview">   
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb1">
                             <div class="mySlidesb1 fadeb1">
                                 <img src="">
@@ -420,7 +419,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right1">
+                    <div class="views-right1 grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -467,8 +466,9 @@
 
 
 
+
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb2">
                             <div class="mySlidesb2 fadeb2">
                                 <img src="">
@@ -509,7 +509,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right2">
+                    <div class="views-right2 grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -556,7 +556,7 @@
 
 
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb3">
                             <div class="mySlidesb3 fadeb3">
                                 <img src="">
@@ -597,7 +597,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right3">
+                    <div class="views-right3 grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -645,7 +645,7 @@
 
 
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb4">
                             <div class="mySlidesb4 fadeb4">
                                 <img src="">
@@ -686,7 +686,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right4">
+                    <div class="views-right4 grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>

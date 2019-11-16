@@ -216,7 +216,7 @@
             <div class="categoriesPreview">
                 <h2>Latest Feeds</h2>
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb1">
                             <div class="mySlidesb1 fadeb1">
                                 <img src="">
@@ -257,7 +257,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right1-viewProducts">
+                    <div class="views-right1-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -304,7 +304,7 @@
 
 
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb2">
                             <div class="mySlidesb2 fadeb2">
                                 <img src="">
@@ -345,7 +345,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right2-viewProducts">
+                    <div class="views-right2-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -391,7 +391,7 @@
 
 
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb3">
                             <div class="mySlidesb3 fadeb3">
                                 <img src="">
@@ -432,7 +432,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right3-viewProducts">
+                    <div class="views-right3-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -479,7 +479,7 @@
 
 
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb4">
                             <div class="mySlidesb4 fadeb4">
                                 <img src="">
@@ -520,7 +520,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right4-viewProducts">
+                    <div class="views-right4-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -565,7 +565,7 @@
                 <br/>
 
                 <div>
-                    <div class="views-left1">
+                    <div class="views-left1 grid_6">
                         <div class="slideshow-containerb5">
                             <div class="mySlidesb5 fadeb5">
                                 <img src="">
@@ -606,7 +606,7 @@
                         </div>                        
                     </div>
 
-                    <div class="views-right5-viewProducts">
+                    <div class="views-right5-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
                         <span class="seller-ID-view"></span>
                         <br>
@@ -654,8 +654,9 @@
 
         </div>
         <br/>
-        
-        <span class="pagees-enclose">Pages
+        <br/>
+
+        <span class="pagees-enclose grid_12" style="text-align: center;">Pages
             <span>
                 &nbsp;&nbsp;&nbsp;&nbsp; <span class="no-decoration">1</span>
                 &nbsp;&nbsp;&nbsp;&nbsp; <a href="/electronics_viewProducts2_page2">2</a>
@@ -664,7 +665,6 @@
                 &nbsp;&nbsp;&nbsp;&nbsp; <a href="/electronics_viewProducts2_page5">5</a>
             </span>
         </span>
-        <br>
         <br style="clear: both;">
         <br/>
         <br/>

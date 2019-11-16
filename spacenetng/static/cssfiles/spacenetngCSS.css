@@ -56,20 +56,16 @@ a {
 }
 
 
-#main-content {
-    padding: 5px;
-}
-
 
 .right-wing {
   position: absolute;
-  left: 99.2%; top: 20px; background-color: lightgrey;
+  left: 99.2%; top: 3%; background-color: lightgrey;
   width: 350px;
 }
 
 .right-wing-home {
   position: absolute;
-  left: 99.2%; top: 20px; background-color: lightgrey;
+  left: 99.2%; top: 3%; background-color: lightgrey;
   width: 350px;
 }
 
@@ -118,59 +114,64 @@ padding-left: 3px; max-height: 168.5px;
 /* For index or home page */
 .views-right1{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 30.97%; border-bottom: solid grey;
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
 .views-right2{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 47.95%; border-bottom: solid grey
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right3{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 64.95%; border-bottom: solid grey
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right4{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 81.95%; border-bottom: solid grey
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
 /* For Category pages */
 .views-right1-viewProducts{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 186px; border-bottom: solid grey;
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
 .views-right2-viewProducts{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 531px; border-bottom: solid grey
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right3-viewProducts{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 876px; border-bottom: solid grey
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right4-viewProducts{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 1221px; border-bottom: solid grey
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 .views-right5-viewProducts{
   background-color: rgb(143, 185, 143);
-  max-width: 535px; min-width: 535px; min-height: 325px; max-height: 325px;
-  position: absolute; left: 415px; top: 1566px; border-bottom: solid grey
+  min-width: 525px; max-width: 525px; min-height: 325px; max-height: 325px;
+  border-bottom: solid whitesmoke; margin-right: -0.8%;
 }
 
 
 /* For both home page and category page */
 .views-left1{
   background-color: lightgrey;
-  max-width: 400px; min-height: 325px; border-bottom: solid grey;
+  min-width: 400px; max-width: 400px;
+  min-height: 325px; max-height: 325px; 
+  border-bottom: solid whitesmoke; border-right: solid grey;
+
+  /* Join left and right views together, add a demarcation color in btw them */
+  margin-right: -1.1%;
 }
 
 
