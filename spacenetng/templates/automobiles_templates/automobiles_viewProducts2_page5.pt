@@ -215,7 +215,7 @@
 
             <div class="categoriesPreview">
                 <h2>Latest Feeds</h2>
-                <div>
+                <div class="n-views-contain grid_12">
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb1">
                             <div class="mySlidesb1 fadeb1">
@@ -303,7 +303,7 @@
 
 
 
-                <div>
+                <div class="n-views-contain grid_12">
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb2">
                             <div class="mySlidesb2 fadeb2">
@@ -390,7 +390,7 @@
                 <br>
 
 
-                <div>
+                <div class="n-views-contain grid_12">
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb3">
                             <div class="mySlidesb3 fadeb3">
@@ -478,7 +478,7 @@
                 <br>
 
 
-                <div>
+                <div class="n-views-contain grid_12">
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb4">
                             <div class="mySlidesb4 fadeb4">
@@ -564,7 +564,7 @@
                 </div>
                 <br/>
 
-                <div>
+                <div class="n-views-contain grid_12">
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb5">
                             <div class="mySlidesb5 fadeb5">

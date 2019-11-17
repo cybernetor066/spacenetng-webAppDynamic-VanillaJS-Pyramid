@@ -103,10 +103,17 @@
 .mySlidesb1 {display: none;}
 
 .fadeb1 > img {
-  min-height: 280px !important; min-width: 396px !important;
-  max-height: 280x !important; max-width: 396px !important;
-  position: relative; margin-top: 5px;
+  min-height: 17em !important; min-width: 25em !important;
+  max-height: 17em !important; max-width: 25em !important;
+  position: relative;
+  margin-bottom: -1%;
+  margin-left: 1.5%; margin-right: 2%; margin-top: 1.5%;
 }
+
+.fadeb1 {
+  margin-bottom: -3%;
+}
+
 
 /* Caption text */
 .fadeb1 > .textb1 {
@@ -115,7 +122,7 @@
   font-size: 15px;
   padding: 3px;
   position: absolute;
-  bottom: 23px; left: 35%;
+  bottom: 23px; left: 38%;
   background: black;
   text-align: center;
 }
@@ -164,9 +171,15 @@
 .mySlidesb2 {display: none;}
 
 .fadeb2 > img {
-  min-height: 280px !important; min-width: 396px !important;
-  max-height: 280x !important; max-width: 396px !important;
-  position: relative; margin-top: 5px;
+  min-height: 17em !important; min-width: 25em !important;
+  max-height: 17em !important; max-width: 25em !important;
+  position: relative;
+  margin-bottom: -1%;
+  margin-left: 1.5%; margin-right: 2%; margin-top: 1.5%;
+}
+
+.fadeb2 {
+  margin-bottom: -3%;
 }
 
 /* Caption text */
@@ -176,7 +189,7 @@
   font-size: 15px;
   padding: 3px;
   position: absolute;
-  bottom: 23px; left: 35%;
+  bottom: 23px; left: 38%;
   background: black;
   text-align: center;
 }
@@ -223,9 +236,15 @@
 .mySlidesb3 {display: none;}
 
 .fadeb3 > img {
-  min-height: 280px !important; min-width: 396px !important;
-  max-height: 280x !important; max-width: 396px !important;
-  position: relative; margin-top: 5px;
+  min-height: 17em !important; min-width: 25em !important;
+  max-height: 17em !important; max-width: 25em !important;
+  position: relative;
+  margin-bottom: -1%;
+  margin-left: 1.5%; margin-right: 2%; margin-top: 1.5%;;
+}
+
+.fadeb3 {
+  margin-bottom: -3%;
 }
 
 /* Caption text */
@@ -235,7 +254,7 @@
   font-size: 15px;
   padding: 3px;
   position: absolute;
-  bottom: 23px; left: 35%;
+  bottom: 23px; left: 38%;
   background: black;
   text-align: center;
 }
@@ -284,9 +303,15 @@
 .mySlidesb4 {display: none;}
 
 .fadeb4 > img {
-  min-height: 280px !important; min-width: 396px !important;
-  max-height: 280x !important; max-width: 396px !important;
-  position: relative; margin-top: 5px;
+  min-height: 17em !important; min-width: 25em !important;
+  max-height: 17em !important; max-width: 25em !important;
+  position: relative;
+  margin-bottom: -1%;
+  margin-left: 1.5%; margin-right: 2%; margin-top: 1.5%;
+}
+
+.fadeb4 {
+  margin-bottom: -3%;
 }
 
 /* Caption text */
@@ -296,7 +321,7 @@
   font-size: 15px;
   padding: 3px;
   position: absolute;
-  bottom: 23px; left: 35%;
+  bottom: 23px; left: 38%;
   background: black;
   text-align: center;
 }
@@ -345,9 +370,15 @@
 
 /* For the smaller slides */
 .fadeb5 > img {
-  min-height: 280px !important; min-width: 396px !important;
-  max-height: 280x !important; max-width: 396px !important;
-  position: relative; margin-top: 5px;
+  min-height: 17em !important; min-width: 25em !important;
+  max-height: 17em !important; max-width: 25em !important;
+  position: relative;
+  margin-bottom: -1%;
+  margin-left: 1.5%; margin-right: 2%; margin-top: 1.5%;
+}
+
+.fadeb5 {
+  margin-bottom: -3%;
 }
 
 /* Caption text */
@@ -357,7 +388,7 @@
   font-size: 15px;
   padding: 3px;
   position: absolute;
-  bottom: 23px; left: 35%;
+  bottom: 23px; left: 38%;
   background: black;
   text-align: center;
 }
@@ -394,6 +425,8 @@
 @media only screen and (max-width: 300px) {
   .textb5 {font-size: 11px}
 }
+
+
 
 
 
