@@ -121,8 +121,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  position: absolute;
-  bottom: 5%; left: 40%;
+  margin-left: 40%;
   background: black;
   text-align: center;
 }
@@ -188,8 +187,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  position: absolute;
-  bottom: 5%; left: 40%;
+  margin-left: 40%;
   background: black;
   text-align: center;
 }
@@ -253,8 +251,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  position: absolute;
-  bottom: 5%; left: 40%;
+  margin-left: 40%;
   background: black;
   text-align: center;
 }
@@ -320,8 +317,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  position: absolute;
-  bottom: 5%; left: 40%;
+  margin-left: 40%;
   background: black;
   text-align: center;
 }
@@ -387,8 +383,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  position: absolute;
-  bottom: 5%; left: 40%;
+  margin-left: 40%;
   background: black;
   text-align: center;
 }

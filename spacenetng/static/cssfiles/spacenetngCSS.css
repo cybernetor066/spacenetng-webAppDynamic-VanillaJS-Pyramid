@@ -73,7 +73,7 @@ a {
   width: 350px;
 }
 
-.customSearch{background-color: darkmagenta; height: 38px; padding: 8px; }
+.customSearch{background-color: darkmagenta; height: 38px; padding: 3px; }
 
 .ads {
 border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
