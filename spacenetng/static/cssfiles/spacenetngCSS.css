@@ -23,6 +23,10 @@ body {
 }
 
 
+.nav, #second-div, .lastest-news, .flash-news, .slideshow-container, #main-content {
+  border-right: solid grey;
+}
+
 
 /* Adjusting space between <p> elements */
 p[class="paragraph"] {
@@ -59,13 +63,13 @@ a {
 
 .right-wing {
   position: absolute;
-  left: 99.2%; top: 20px; background-color: lightgrey;
+  left: 99.2%; top: 20px;
   width: 350px;
 }
 
 .right-wing-home {
   position: absolute;
-  left: 99.2%; top: 20px; background-color: lightgrey;
+  left: 99.2%; top: 20px;
   width: 350px;
 }
 
@@ -73,19 +77,15 @@ a {
 
 .ads {
 border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
-padding-left: 3px;
+padding-left: 3px; border-bottom: solid brown; padding-bottom: 3px;
 }
 .ads-home {
   border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
-  padding-left: 3px;
+  padding-left: 3px; border-bottom: solid brown; padding-bottom: 3px;
   }
 
-.ads-home-last {
-  border-top: solid 5px white; margin-top: 5px; min-height: 280px;
-  padding-left: 3px; max-height: 280px;
-  }
 
-.ads-viewProducts-third{min-height: 100px !important; min-height: 100px !important;}
+/* .ads-viewProducts-third{min-height: 100px !important; min-height: 100px !important;} */
 
 
 /* All customisations for right wing elements. */
@@ -97,9 +97,9 @@ padding-left: 3px;
   background-color: black; color: lightslategray;
   min-height: 520px; padding-left: 2px;
 }
-.aboutMainBody{
-  background-color: lightgrey; border-right: 4px black solid;
-  min-height: 520px; padding-left: 2px; max-width: 935px;
+.aboutMainBody, .contactMainBody{
+  background-color: lightgrey;
+  min-height: 520px; padding-left: 5px; max-width: 935px;
 }
 #modify1Submit{text-align: center; color: limegreen;}
 .pushInput-right1{position: absolute; left: 300px; top: 155px;}
@@ -174,7 +174,7 @@ padding-left: 3px;
 }
 
 .n-views-contain {
-  border-bottom: solid white;
+  border-bottom: solid white 10px;
   margin-left: -0.09%;
   background-color: lightgrey;
 }
