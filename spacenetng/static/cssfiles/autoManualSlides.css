@@ -121,7 +121,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  margin-left: 40%;
+  margin-left: 43%;
   background: black;
   text-align: center;
 }
@@ -187,7 +187,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  margin-left: 40%;
+  margin-left: 43%;
   background: black;
   text-align: center;
 }
@@ -251,7 +251,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  margin-left: 40%;
+  margin-left: 43%;
   background: black;
   text-align: center;
 }
@@ -317,7 +317,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  margin-left: 40%;
+  margin-left: 43%;
   background: black;
   text-align: center;
 }
@@ -383,7 +383,7 @@
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  margin-left: 40%;
+  margin-left: 43%;
   background: black;
   text-align: center;
 }
@@ -421,6 +421,136 @@
   .textb5 {font-size: 11px}
 }
 
+
+
+
+
+
+
+
+
+.prevb1,
+.nextb1 {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 50%;
+  user-select: none;
+  cursor: pointer;
+  color: green;
+}
+
+.prevb1 {
+  transform: translateY(-50%);
+  left: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+.nextb1 {
+  transform: translateY(-50%);
+  right: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+
+
+
+
+.prevb2,
+.nextb2 {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 50%;
+  user-select: none;
+  cursor: pointer;
+  color: green;
+}
+
+.prevb2 {
+  transform: translateY(-50%);
+  left: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+.nextb2 {
+  transform: translateY(-50%);
+  right: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+
+
+
+.prevb3,
+.nextb3 {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 50%;
+  user-select: none;
+  cursor: pointer;
+  color: green;
+}
+
+.prevb3 {
+  transform: translateY(-50%);
+  left: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+.nextb3 {
+  transform: translateY(-50%);
+  right: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+
+
+
+
+.prevb4,
+.nextb4 {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 50%;
+  user-select: none;
+  cursor: pointer;
+  color: green;
+}
+
+.prevb4 {
+  transform: translateY(-50%);
+  left: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+.nextb4 {
+  transform: translateY(-50%);
+  right: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+
+
+
+.prevb5,
+.nextb5 {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 50%;
+  user-select: none;
+  cursor: pointer;
+  color: green;
+}
+
+.prevb5 {
+  transform: translateY(-50%);
+  left: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+.nextb5 {
+  transform: translateY(-50%);
+  right: 1.2rem;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevb1:hover, .nextb1:hover, .prevb2:hover, .nextb2:hover, .prevb3:hover, .nextb3:hover,
+.prevb4:hover, .nextb4:hover, .prevb5:hover, .nextb5:hover {
+  /* background-color: rgba(0,0,0,0.8); */
+  background-color: black;
+
+}
 
 
 

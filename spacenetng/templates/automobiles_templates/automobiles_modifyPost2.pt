@@ -211,7 +211,10 @@
         <!-- Landing Page Content -->
         <div id="create-new-post" class="grid_12">
 
-            <form action="" method="POST">
+            <form action="${request.current_route_url()}" method="POST" enctype="multipart/form-data">
+
+            <input type="hidden" value=${private_UUID} id="privateUUID" name="automobiles_update_privateUUID"/>
+
             <p id="regionSel">Please select target region:</p>
             <div class="box-n state-list">
                 <select id="mySelect" name="automobiles_update_statesList">

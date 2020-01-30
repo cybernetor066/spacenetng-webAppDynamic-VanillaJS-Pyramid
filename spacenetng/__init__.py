@@ -1,14 +1,24 @@
 from pyramid.config import Configurator
+# from pyramid.session import SignedCookieSessionFactory    # Establishing a session factory
 
 def main(global_config, **settings):
-    config =Configurator(settings=settings)
+    # Establishing a session factory
+    # my_session = SignedCookieSessionFactory('itsclassified')
+    # Use:
+    # config = Configurator()
+    # config.set_session_factory(my_session) Or:
+    # config = Configurator(settings=settings, session_factory=my_session)
+
+    config = Configurator(settings=settings)
     config.include('pyramid_chameleon')
     config.add_route('home', '/')
+
     # Electronics category routes
     # ****************************************************************************************
     # Routes for Mother Classes
     config.add_route('electronics_createNewPost', '/electronics_createNewPost')
     config.add_route('electronics_modifyPost1', '/electronics_modifyPost1')
+    config.add_route('electronics_modifyPost2', '/electronics_modifyPost2')
     config.add_route('electronics_viewProducts1', '/electronics_viewProducts1')
 
     # Routes for viewProducts_page(n) pages.
@@ -25,6 +35,7 @@ def main(global_config, **settings):
     # Routes for Mother Classes
     config.add_route('automobiles_createNewPost', '/automobiles_createNewPost')
     config.add_route('automobiles_modifyPost1', '/automobiles_modifyPost1')
+    config.add_route('automobiles_modifyPost2', '/automobiles_modifyPost2')
     config.add_route('automobiles_viewProducts1', '/automobiles_viewProducts1')
 
     # Routes for viewProducts_page(n) pages.
@@ -41,6 +52,7 @@ def main(global_config, **settings):
     # Routes for Mother Classes
     config.add_route('housing_createNewPost', '/housing_createNewPost')
     config.add_route('housing_modifyPost1', '/housing_modifyPost1')
+    config.add_route('housing_modifyPost2', '/housing_modifyPost2')
     config.add_route('housing_viewProducts1', '/housing_viewProducts1')
 
     # Routes for viewProducts_page(n) pages.
@@ -57,6 +69,7 @@ def main(global_config, **settings):
     # Routes for Mother Classes
     config.add_route('fashion_createNewPost', '/fashion_createNewPost')
     config.add_route('fashion_modifyPost1', '/fashion_modifyPost1')
+    config.add_route('fashion_modifyPost2', '/fashion_modifyPost2')
     config.add_route('fashion_viewProducts1', '/fashion_viewProducts1')
 
     # Routes for viewProducts_page(n) pages.

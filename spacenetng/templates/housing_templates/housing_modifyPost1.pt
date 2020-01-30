@@ -209,40 +209,56 @@
         
 
         <!-- Landing Page Content -->
-        <div class="grid_12 modifyPost1-body">
-        <form action="" method="POST">
+        <div class="grid_12 modifyPost1-body" id="main-content">
+        <form action="${request.current_route_url()}" method="POST" id="edit-delete-form">
+            <br/>
+            <br/>
+            
+            
             <div>
-                <br>
-                <br>
+                <div class="grid_12">
+                <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/passwordWarning1.js')}"></script>
+                <span id="userWarning">${user_warning}</span>
+                <br/>
+                <br/>
+
                 <span id="mod1a">
-                    Enter your product ID sent to your
+                    Enter your private ID sent to your
                     <br>
-                    email during the time of the first post:
-                </span>
-                <label for="productIDa" class="pushInput-right1">
-                    <input type="text" id="productIDa" name="housing_modify1_productIDa" required>
+                    email during the time of the first post
+                </span> &nbsp;&nbsp;&nbsp;
+
+                <label for="privateUUID">
+                    <input type="text" id="privateUUID" name="housing_modify1_privateUUID" required>
                 </label>
+                </div>
+                <br/>
                 <br>
                 <br>
-                <br>
-                <br>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
 
+
+                <div class="grid_12">
                 <span id="mod1b">
-                    Enter Phone number associated
-                    <br>
-                    with your product ID:
-                </span>
-                <label for="productIDb" class="pushInput-right2">
-                    <input type="text" pattern="[0-9]+" id="productIDb" name="housing_modify1_productIDb" required>
+                    Enter your product ID
+                </span> &nbsp;&nbsp;&nbsp;
+
+                <label for="productID">
+                    <input type="text" id="productID" name="housing_modify1_productID" required>
                 </label>
+                </div>
             </div>
             <br>
             <br>
             <br>
             <br>
 
-            <div class="terms-conditions-modify1">
+            <div class="terms-conditions-modify1 grid_6">
                 <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/embededScript1.js')}"></script>
                 <label for="checkbox2" class="container-checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox2" class="termscon" required onclick="mouseClick2()">
@@ -256,7 +272,7 @@
             <br>
 
             <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-             <div id="modify1Submit">               
+             <div id="modify1Submit" class="grid_12">               
                 <div id="update-delete">
                     <span>&gt;&gt;&gt; &nbsp;&nbsp;</span>
                     <label for="update">

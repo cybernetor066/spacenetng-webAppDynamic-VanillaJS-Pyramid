@@ -211,7 +211,7 @@
         <!-- Landing Page Content -->
         <div id="create-new-post" class="grid_12">
 
-            <form action="" method="POST">
+            <form action="${request.current_route_url()}" method="POST" enctype="multipart/form-data">
             <p id="regionSel">Please select target region:</p>
             <div class="box-n state-list">
                 <select id="mySelect" name="electronics_create_statesList">
@@ -273,7 +273,7 @@
 
                 Upload product images:
                 <label>
-                <input type="file" id="files" name="electronics_create_images" multiple accept=".jpg, .jpeg, .png, .gif" required>
+                <input type="file" id="files" name="electronics_create_images" multiple="multiple" accept=".jpg, .jpeg, .png, .gif" required>
                 </label>
                 <div id="selectedFiles"></div>
             </div>
@@ -403,7 +403,7 @@
         <br>
         <br>
         <div id="footer">&copy;Copyright 2019 www.spacenetng.com 
-            <br />All Rights Reserved.
+            <br/>All Rights Reserved.
         </div>    
     </div>
 

@@ -58,6 +58,7 @@ input.termscon:invalid {width: 0px;}
 #create {text-align: center; padding-bottom: 15px;}
 .terms-conditions {background-color: white;}
 .terms-conditions-modify1 {background-color: black;}
+#userWarning {color: red;}
 
 
 /* #final-submit {font-size: 20px; min-width: 100px;} */
@@ -67,11 +68,22 @@ input.termscon:invalid {width: 0px;}
 .newpost-rh{min-height: 715px; background-color: whitesmoke !important;}
 
 .itemConditions{padding-top: 4px; padding-bottom: 4px;}
-/* .filesCounter{} */
 
+
+
+
+.modifyPost1-body{
+  background-color: black; color: lightslategray;
+  min-height: 520px; padding-left: 1px;
+}
+#modify1Submit{text-align: center; color: limegreen;}
+#mod1a, #mod1b{font-size: 16px;}
 #update{background-color: lightgreen; border-radius: 8px; min-height: 30px; font-size: 16px; min-width: 70px;}
 #delete{background-color: tomato; border-radius: 8px; min-height: 30px; font-size: 16px; min-width: 70px;}
 #update-delete {text-align: center; padding-bottom: 15px;}
+
+
+
 
 .viewProducts1{text-align: center; padding-top: 5px; padding-bottom: 5px;}
 #proceedToViewProducts{background-color: lightgreen; border-radius: 8px; min-height: 30px; font-size: 16px; min-width: 70px;}

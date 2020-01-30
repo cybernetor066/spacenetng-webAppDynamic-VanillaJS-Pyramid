@@ -93,18 +93,13 @@ padding-left: 3px; border-bottom: solid brown; padding-bottom: 3px;
 /* #textAlign-left{text-align: left;} */
 #cryptoPageLink-link {font-style: italic;}
 #cryptoPageLink-link:hover a {color: red;}
-.modifyPost1-body{
-  background-color: black; color: lightslategray;
-  min-height: 520px; padding-left: 2px;
-}
+
 .aboutMainBody, .contactMainBody{
   background-color: lightgrey;
   min-height: 520px; padding-left: 5px; max-width: 935px;
 }
-#modify1Submit{text-align: center; color: limegreen;}
-.pushInput-right1{position: absolute; left: 300px; top: 155px;}
-.pushInput-right2{position: absolute; left: 300px; top: 230px;}
-#mod1a, #mod1b{font-size: 16px;}
+
+
 #phone-contact-contact, #email-contact-contact, #twitter-contact-contact{
   text-decoration: underline;
   text-decoration-color: blue;

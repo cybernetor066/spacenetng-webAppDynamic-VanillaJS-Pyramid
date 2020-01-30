@@ -211,7 +211,7 @@
         <!-- Landing Page Content -->
         <div id="create-new-post" class="grid_12">
 
-            <form action="" method="POST">
+            <form action="${request.current_route_url()}" method="POST" enctype="multipart/form-data">
             <p id="regionSel">Please select target region:</p>
             <div class="box-n state-list">
                 <select id="mySelect" name="housing_create_statesList">

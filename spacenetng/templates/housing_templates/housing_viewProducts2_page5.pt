@@ -219,28 +219,28 @@
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb1">
                             <div class="mySlidesb1 fadeb1">
-                                <img src="">
-                                <span class="textb1">Image 1</span>
+                                <img src="data:image/png;base64,${image21A}" alt=""/>
+                                <span class="textb1">1 / 5</span>
                             </div>
         
                             <div class="mySlidesb1 fadeb1">
-                                <img src="">
-                                <span class="textb1">Image 2</span>
+                                <img src="data:image/png;base64,${image21B}" alt=""/>
+                                <span class="textb1">2 / 5</span>
                             </div>
         
                             <div class="mySlidesb1 fadeb1">
-                                <img src="">
-                                <span class="textb1">Image 3</span>
+                                <img src="data:image/png;base64,${image21C}" alt=""/>
+                                <span class="textb1">3 / 5</span>
                             </div>
 
                             <div class="mySlidesb1 fadeb1">
-                                <img src="">
-                                <span class="textb1">Image 4</span>
+                                <img src="data:image/png;base64,${image21D}" alt=""/>
+                                <span class="textb1">4 / 5</span>
                             </div>
 
                             <div class="mySlidesb1 fadeb1">
-                                <img src="">
-                                <span class="textb1">Image 5</span>
+                                <img src="data:image/png;base64,${image21E}" alt=""/>
+                                <span class="textb1">5 / 5</span>
                             </div>
                             <br>
 
@@ -252,6 +252,9 @@
                                 <span class="dotb1"></span> 
                             </div>
 
+                            <a class="prevb1">&#10094;</a>
+                            <a class="nextb1">&#10095;</a>
+
                             <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb1.js')}"></script>
                             
                         </div>                        
@@ -259,44 +262,43 @@
 
                     <div class="views-right1-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
-                        <span class="seller-ID-view"></span>
+                        <span class="seller-ID-view">${productID21}</span>
                         <br>
                         <br>
                         
                         <span class="labels-view">Individual/Company name:</span>
-                        <span class="seller-name-view"></span>
+                        <span class="seller-name-view">${username21}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Location:</span>
-                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <span class="seller-town-view">${city21}</span>, <span class="seller-state-view">${state21}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Description:</span>
                         <br>
-                        <span class="item-description-view">
-                        </span>
+                        <span class="item-description-view">${description21}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Phone:</span>
-                        <span class="seller-phone-view"></span>
+                        <span class="seller-phone-view">${mobile21}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Email:</span>
-                        <span class="seller-email-view"></span>
+                        <span class="seller-email-view">${email21}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Category:</span>
-                        <span class="seller-category-view"></span>
+                        <span class="seller-category-view">${category21}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Condition:</span>
-                        <span class="seller-condition-view"></span>
+                        <span class="seller-condition-view">${condition21}</span>
                     </div>                    
                 </div>
                 <br>
@@ -307,28 +309,28 @@
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb2">
                             <div class="mySlidesb2 fadeb2">
-                                <img src="">
-                                <span class="textb2">Image 1</span>
+                                <img src="data:image/png;base64,${image22A}" alt=""/>
+                                <span class="textb2">1 / 5</span>
                             </div>
         
                             <div class="mySlidesb2 fadeb2">
-                                <img src="">
-                                <span class="textb2">Image 2</span>
+                                <img src="data:image/png;base64,${image22B}" alt=""/>
+                                <span class="textb2">2 / 5</span>
                             </div>
         
                             <div class="mySlidesb2 fadeb2">
-                                <img src="">
-                                <span class="textb2">Image 3</span>
+                                <img src="data:image/png;base64,${image22C}" alt=""/>
+                                <span class="textb2">3 / 5</span>
                             </div>
 
                             <div class="mySlidesb2 fadeb2">
-                                <img src="">
-                                <span class="textb2">Image 4</span>
+                                <img src="data:image/png;base64,${image22D}" alt=""/>
+                                <span class="textb2">4 / 5</span>
                             </div>
 
                             <div class="mySlidesb2 fadeb2">
-                                <img src="">
-                                <span class="textb2">Image 5</s>
+                                <img src="data:image/png;base64,${image22E}" alt=""/>
+                                <span class="textb2">5 / 5</span>
                             </div>
                             <br>
 
@@ -340,6 +342,9 @@
                                 <span class="dotb2"></span> 
                             </div>
 
+                            <a class="prevb2">&#10094;</a>
+                            <a class="nextb2">&#10095;</a>
+
                             <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb2.js')}"></script>
                             
                         </div>                        
@@ -347,44 +352,43 @@
 
                     <div class="views-right2-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
-                        <span class="seller-ID-view"></span>
+                        <span class="seller-ID-view">${productID22}</span>
                         <br>
                         <br>
                         
                         <span class="labels-view">Individual/Company name:</span>
-                        <span class="seller-name-view"></span>
+                        <span class="seller-name-view">${username22}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Location:</span>
-                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <span class="seller-town-view">${city22}</span>, <span class="seller-state-view">${state22}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Description:</span>
                         <br>
-                        <span class="item-description-view">
-                        </span>
+                        <span class="item-description-view">${description22}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Phone:</span>
-                        <span class="seller-phone-view"></span>
+                        <span class="seller-phone-view">${mobile22}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Email:</span>
-                        <span class="seller-email-view"></span>
+                        <span class="seller-email-view">${email22}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Category:</span>
-                        <span class="seller-category-view"></span>
+                        <span class="seller-category-view">${category22}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Condition:</span>
-                        <span class="seller-condition-view"></span>
+                        <span class="seller-condition-view">${condition22}</span>
                     </div>                    
                 </div>
                 <br>
@@ -394,28 +398,28 @@
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb3">
                             <div class="mySlidesb3 fadeb3">
-                                <img src="">
-                                <span class="textb3">Image 1</span>
+                                <img src="data:image/png;base64,${image23A}" alt=""/>
+                                <span class="textb3">1 / 5</span>
                             </div>
         
                             <div class="mySlidesb3 fadeb3">
-                                <img src="">
-                                <span class="textb3">Image 2</span>
+                                <img src="data:image/png;base64,${image23B}" alt=""/>
+                                <span class="textb3">2 / 5</span>
                             </div>
         
                             <div class="mySlidesb3 fadeb3">
-                                <img src="">
-                                <span class="textb3">Image 3</span>
+                                <img src="data:image/png;base64,${image23C}" alt=""/>
+                                <span class="textb3">3 / 5</span>
                             </div>
 
                             <div class="mySlidesb3 fadeb3">
-                                <img src="">
-                                <span class="textb3">Image 4</s>
+                                <img src="data:image/png;base64,${image23D}" alt=""/>
+                                <span class="textb3">4 / 5</span>
                             </div>
 
                             <div class="mySlidesb3 fadeb3">
-                                <img src="">
-                                <span class="textb3">Image 5</span>
+                                <img src="data:image/png;base64,${image23E}" alt=""/>
+                                <span class="textb3">5 / 5</span>
                             </div>
                             <br>
 
@@ -427,6 +431,9 @@
                                 <span class="dotb3"></span> 
                             </div>
 
+                            <a class="prevb3">&#10094;</a>
+                            <a class="nextb3">&#10095;</a>
+
                             <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb3.js')}"></script>
                             
                         </div>                        
@@ -434,45 +441,44 @@
 
                     <div class="views-right3-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
-                        <span class="seller-ID-view"></span>
+                        <span class="seller-ID-view">${productID23}</span>
                         <br>
                         <br>
                         
                         <span class="labels-view">Individual/Company name:</span>
-                        <span class="seller-name-view"></span>
+                        <span class="seller-name-view">${username23}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Location:</span>
-                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <span class="seller-town-view">${city23}</span>, <span class="seller-state-view">${state23}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Description:</span>
                         <br>
                         <!-- Test for maximum rows and columns and edit in the create-post form page. -->
-                        <span class="item-description-view">
-                        </span>
+                        <span class="item-description-view">${description23}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Phone:</span>
-                        <span class="seller-phone-view"></span>
+                        <span class="seller-phone-view">${mobile23}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Email:</span>
-                        <span class="seller-email-view"></span>
+                        <span class="seller-email-view">${email23}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Category:</span>
-                        <span class="seller-category-view"></span>
+                        <span class="seller-category-view">${category23}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Condition:</span>
-                        <span class="seller-condition-view"></span>
+                        <span class="seller-condition-view">${condition23}</span>
                     </div>                    
                 </div>
                 <br>
@@ -482,28 +488,28 @@
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb4">
                             <div class="mySlidesb4 fadeb4">
-                                <img src="">
-                                <span class="textb4">Image 1</span>
+                                <img src="data:image/png;base64,${image24A}" alt=""/>
+                                <span class="textb4">1 / 5</span>
                             </div>
         
                             <div class="mySlidesb4 fadeb4">
-                                <img src="">
-                                <span class="textb4">Image 2</span>
+                                <img src="data:image/png;base64,${image24B}" alt=""/>
+                                <span class="textb4">2 / 5</span>
                             </div>
         
                             <div class="mySlidesb4 fadeb4">
-                                <img src="">
-                                <span class="textb4">Image 3</span>
+                                <img src="data:image/png;base64,${image24C}" alt=""/>
+                                <span class="textb4">3 / 5</span>
                             </div>
 
                             <div class="mySlidesb4 fadeb4">
-                                <img src="">
-                                <span class="textb4">Image 4</span>
+                                <img src="data:image/png;base64,${image24D}" alt=""/>
+                                <span class="textb4">4 / 5</span>
                             </div>
 
                             <div class="mySlidesb4 fadeb4">
-                                <img src="">
-                                <span class="textb4">Image 5</span>
+                                <img src="data:image/png;base64,${image24E}" alt=""/>
+                                <span class="textb4">5 / 5</span>
                             </div>
                             <br>
 
@@ -515,6 +521,9 @@
                                 <span class="dotb4"></span> 
                             </div>
 
+                            <a class="prevb4">&#10094;</a>
+                            <a class="nextb4">&#10095;</a>
+
                             <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb4.js')}"></script>
                             
                         </div>                        
@@ -522,44 +531,43 @@
 
                     <div class="views-right4-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
-                        <span class="seller-ID-view"></span>
+                        <span class="seller-ID-view">${productID24}</span>
                         <br>
                         <br>
                         
                         <span class="labels-view">Individual/Company name:</span>
-                        <span class="seller-name-view"></span>
+                        <span class="seller-name-view">${username24}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Location:</span>
-                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <span class="seller-town-view">${city24}</span>, <span class="seller-state-view">${state24}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Description:</span>
                         <br>
-                        <span class="item-description-view">
-                        </span>
+                        <span class="item-description-view">${description24}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Phone:</span>
-                        <span class="seller-phone-view"></span>
+                        <span class="seller-phone-view">${mobile24}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Email:</span>
-                        <span class="seller-email-view"></span>
+                        <span class="seller-email-view">${email24}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Category:</span>
-                        <span class="seller-category-view"></span>
+                        <span class="seller-category-view">${category24}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Condition:</span>
-                        <span class="seller-condition-view"></span>
+                        <span class="seller-condition-view">${condition24}</span>
                     </div>                    
                 </div>
                 <br/>
@@ -568,28 +576,28 @@
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb5">
                             <div class="mySlidesb5 fadeb5">
-                                <img src="">
-                                <span class="textb5">Image 1</span>
+                                <img src="data:image/png;base64,${image25A}" alt=""/>
+                                <span class="textb5">1 / 5</span>
                             </div>
         
                             <div class="mySlidesb5 fadeb5">
-                                <img src="">
-                                <span class="textb5">Image 2</span>
+                                <img src="data:image/png;base64,${image25B}" alt=""/>
+                                <span class="textb5">2 / 5</span>
                             </div>
         
                             <div class="mySlidesb5 fadeb5">
-                                <img src="">
-                                <span class="textb5">Image 3</span>
+                                <img src="data:image/png;base64,${image25C}" alt=""/>
+                                <span class="textb5">3 / 5</span>
                             </div>
 
                             <div class="mySlidesb5 fadeb5">
-                                <img src="">
-                                <span class="textb5">Image 4</span>
+                                <img src="data:image/png;base64,${image25D}" alt=""/>
+                                <span class="textb5">4 / 5</span>
                             </div>
 
                             <div class="mySlidesb5 fadeb5">
-                                <img src="">
-                                <span class="textb5">Image 5</span>
+                                <img src="data:image/png;base64,${image25E}" alt=""/>
+                                <span class="textb5">5 / 5</span>
                             </div>
                             <br>
 
@@ -601,6 +609,9 @@
                                 <span class="dotb5"></span> 
                             </div>
 
+                            <a class="prevb5">&#10094;</a>
+                            <a class="nextb5">&#10095;</a>
+
                             <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/autoManualSlidesb5.js')}"></script>
                             
                         </div>                        
@@ -608,45 +619,44 @@
 
                     <div class="views-right5-viewProducts grid_6">
                         <span class="labels-view">Product ID:</span>
-                        <span class="seller-ID-view"></span>
+                        <span class="seller-ID-view">${productID25}</span>
                         <br>
                         <br>
                         
                         <span class="labels-view">Individual/Company name:</span>
-                        <span class="seller-name-view"></span>
+                        <span class="seller-name-view">${username25}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Location:</span>
-                        <span class="seller-town-view"></span>, <span class="seller-state-view"></span>
+                        <span class="seller-town-view">${city25}</span>, <span class="seller-state-view">${state25}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Description:</span>
                         <br>
                         <!-- Test for maximum rows and columns and edit in the create-post form page. -->
-                        <span class="item-description-view">
-                        </span>
+                        <span class="item-description-view">${description25}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Phone:</span>
-                        <span class="seller-phone-view"></span>
+                        <span class="seller-phone-view">${mobile25}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Email:</span>
-                        <span class="seller-email-view"></span>
+                        <span class="seller-email-view">${email25}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Category:</span>
-                        <span class="seller-category-view"></span>
+                        <span class="seller-category-view">${category25}</span>
                         <br>
                         <br>
 
                         <span class="labels-view">Item's Condition:</span>
-                        <span class="seller-condition-view"></span>
+                        <span class="seller-condition-view">${condition25}</span>
                     </div>                    
                 </div>
 

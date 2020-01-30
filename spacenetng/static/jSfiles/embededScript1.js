@@ -158,14 +158,21 @@ document.addEventListener('mouseover', ()=> {
     document.getElementById('valid-region').setAttribute('hidden', '');
   }
 
-  // if(validSelect.value == 0) {
-  //   document.getElementsByClassName('valid-form1').disabled = true;
-  //   document.getElementsByClassName('valid-form2').removeAttribute('hidden');
-  // }
-  // if(validSelect.value != 0) {
-  //   document.getElementById('final-submit').disabled = false;
-  //   document.getElementById('valid-region').setAttribute('hidden', '');
-  // }
+}, false);
+
+
+
+// For mobile screen touch responsiveness
+var validSelect2 = document.querySelector("#mySelect");
+document.addEventListener('change', ()=> {
+  if(validSelect2.value == 0) {
+    document.getElementById('final-submit').disabled = true;
+    document.getElementById('valid-region').removeAttribute('hidden');
+  }
+  if(validSelect2.value != 0) {
+    document.getElementById('final-submit').disabled = false;
+    document.getElementById('valid-region').setAttribute('hidden', '');
+  }
 
 }, false);
 
@@ -198,6 +205,18 @@ document.addEventListener('mouseover', ()=> {
 // ******************************************************************************************************
 // ******************************************************************************************************
 // ******************************************************************************************************
+// // Page redirection countdown timer.
+
+// var onee = document.querySelector(".two")
+// onee.addEventListener('mouseover', (e) => {
+//   var countDownvar = document.getElementsByClassName("one");
+//   // timeleft = 16;
+//   // timeleft -= 1;
+//   // if(timeleft <= 0) clearInterval(setInterval(()=> countDownvar.innerHTML = timeleft + "seconds..."), 1000);
+//   // countDownvar.innerHTML = alert('Hey!!')
+//   countDownvar.innerHTML = alert('Present Sir!!');
+// }, false);
+
 
 
 
