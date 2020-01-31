@@ -304,7 +304,7 @@ class ElectronicsCreateNewPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -363,8 +363,8 @@ class ElectronicsCreateNewPostViews(object):
             server_ssl = smtplib.SMTP_SSL('smtp.gmail.com', 465)
             server_ssl.ehlo()
 
-            email = os.environ['APPSETTING_MY_EMAIL_ADDRESS']
-            passWord = os.environ['APPSETTING_MY_EMAIL_PASSWORD']
+            email = os.environ['MY_EMAIL_ADDRESS']
+            passWord = os.environ['MY_EMAIL_PASSWORD']
 
             server_ssl.login(email, passWord)
             server_ssl.send_message(msg)       
@@ -436,7 +436,7 @@ class ElectronicsModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -477,7 +477,7 @@ class ElectronicsModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -572,7 +572,7 @@ class ElectronicsModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -743,7 +743,7 @@ class ElectronicsViewProductsViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -3365,7 +3365,7 @@ class AutomobilesCreateNewPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -3424,8 +3424,8 @@ class AutomobilesCreateNewPostViews(object):
             server_ssl = smtplib.SMTP_SSL('smtp.gmail.com', 465)
             server_ssl.ehlo()
 
-            email = os.environ['APPSETTING_MY_EMAIL_ADDRESS']
-            passWord = os.environ['APPSETTING_MY_EMAIL_PASSWORD']
+            email = os.environ['MY_EMAIL_ADDRESS']
+            passWord = os.environ['MY_EMAIL_PASSWORD']
 
             server_ssl.login(email, passWord)
             server_ssl.send_message(msg)       
@@ -3497,7 +3497,7 @@ class AutomobilesModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -3538,7 +3538,7 @@ class AutomobilesModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -3633,7 +3633,7 @@ class AutomobilesModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -3804,7 +3804,7 @@ class AutomobilesViewProductsViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -6423,7 +6423,7 @@ class HousingCreateNewPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -6482,8 +6482,8 @@ class HousingCreateNewPostViews(object):
             server_ssl = smtplib.SMTP_SSL('smtp.gmail.com', 465)
             server_ssl.ehlo()
 
-            email = os.environ['APPSETTING_MY_EMAIL_ADDRESS']
-            passWord = os.environ['APPSETTING_MY_EMAIL_PASSWORD']
+            email = os.environ['MY_EMAIL_ADDRESS']
+            passWord = os.environ['MY_EMAIL_PASSWORD']
 
             server_ssl.login(email, passWord)
             server_ssl.send_message(msg)       
@@ -6555,7 +6555,7 @@ class HousingModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -6596,7 +6596,7 @@ class HousingModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -6691,7 +6691,7 @@ class HousingModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -6862,7 +6862,7 @@ class HousingViewProductsViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -9477,7 +9477,7 @@ class FashionCreateNewPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -9536,8 +9536,8 @@ class FashionCreateNewPostViews(object):
             server_ssl = smtplib.SMTP_SSL('smtp.gmail.com', 465)
             server_ssl.ehlo()
 
-            email = os.environ['APPSETTING_MY_EMAIL_ADDRESS']
-            passWord = os.environ['APPSETTING_MY_EMAIL_PASSWORD']
+            email = os.environ['MY_EMAIL_ADDRESS']
+            passWord = os.environ['MY_EMAIL_PASSWORD']
 
             server_ssl.login(email, passWord)
             server_ssl.send_message(msg)       
@@ -9609,7 +9609,7 @@ class FashionModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -9650,7 +9650,7 @@ class FashionModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -9745,7 +9745,7 @@ class FashionModifyPostViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
@@ -9916,7 +9916,7 @@ class FashionViewProductsViews(object):
         import os
         from dotenv import load_dotenv
         load_dotenv()
-        connection_string = os.environ['APPSETTING_MY_CONNECTION_STRING']
+        connection_string = os.environ['MY_CONNECTION_STRING']
         # Open database connection and get or create a database called spacenetng_database
         client = MongoClient('%s' % connection_string)
         db = client.spacenetng_database
