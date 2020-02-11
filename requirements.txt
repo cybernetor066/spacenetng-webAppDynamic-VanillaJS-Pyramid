@@ -2,6 +2,7 @@ atomicwrites==1.3.0
 attrs==19.3.0
 beautifulsoup4==4.8.1
 Chameleon==3.6.2
+dnspython==1.16.0
 gunicorn==19.9.0
 hupper==1.9
 importlib-metadata==0.23
@@ -27,7 +28,7 @@ python-dotenv==0.10.3
 repoze.lru==0.7
 six==1.12.0
 soupsieve==1.9.4
--e git+https://github.com/cybernetor066/spacenetng-webAppDynamic-VanillaJS-Pyramid@7d729c65a1079d4ba17cdc9101f704aaf9381696#egg=spacenetng
+-e git+https://github.com/cybernetor066/spacenetng-webAppDynamic-VanillaJS-Pyramid@43d1fe123df519fcef34c20e1cae2ce4cb3337d7#egg=spacenetng
 translationstring==1.3
 venusian==1.2.0
 waitress==1.3.1
