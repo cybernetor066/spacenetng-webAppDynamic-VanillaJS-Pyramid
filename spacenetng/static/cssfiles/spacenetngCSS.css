@@ -168,6 +168,14 @@ padding-left: 3px; border-bottom: solid brown; padding-bottom: 3px;
   margin-left: -0.09%;
 }
 
+
+/* Media queries for width adjustment for site responsivenes*/
+
+
+
+
+
+
 .n-views-contain {
   border-bottom: solid white 10px;
   margin-left: -0.09%;
