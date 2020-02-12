@@ -432,7 +432,7 @@
 .prevb1,
 .nextb1 {
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   top: 50%;
   user-select: none;
   cursor: pointer;
@@ -456,7 +456,7 @@
 .prevb2,
 .nextb2 {
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   top: 50%;
   user-select: none;
   cursor: pointer;
@@ -479,7 +479,7 @@
 .prevb3,
 .nextb3 {
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   top: 50%;
   user-select: none;
   cursor: pointer;
@@ -503,7 +503,7 @@
 .prevb4,
 .nextb4 {
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   top: 50%;
   user-select: none;
   cursor: pointer;
@@ -526,7 +526,7 @@
 .prevb5,
 .nextb5 {
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   top: 50%;
   user-select: none;
   cursor: pointer;
