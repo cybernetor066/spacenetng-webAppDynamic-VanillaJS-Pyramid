@@ -10,7 +10,12 @@ function rectifyImages () {
     }
     // specific function to rectify the images
     function reAlignImage() {
-        document.getElementsByClassName('views-left1').setAttribute('hidden', '');
-        document.getElementsByClassName('views-left1').removeAttribute('hidden');
+        var list1 = document.getElementsByClassName('views-left1');
+        for(let item=0; item<list1.length; item++) {
+            item.setAttribute('hidden', '');
+            item.removeAttribute('hidden');
+        }
     }
 }
+
+
