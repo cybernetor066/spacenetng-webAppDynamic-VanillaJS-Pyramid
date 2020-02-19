@@ -378,7 +378,7 @@
         <div id="main-content" class="grid_12">
             <h2>Latest Feeds</h2>
             <div class="categoriesPreview"> 
-
+                <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/afterImageLoad.js')}"></script>
                 <div class="n-views-contain grid_12">
                     <div class="views-left1 grid_6">
                         <div class="slideshow-containerb1">
