@@ -29,8 +29,8 @@ function init() {
 function reAlignImage() {
     var list1 = document.getElementsByClassName('views-left1');
     for(let item=0; item<list1.length; item++) {
-        item.setAttribute('hidden', '');
-        // item.removeAttribute('hidden');
+        list1[item].setAttribute('hidden', '');
+        // list1[item].removeAttribute('hidden');
     }
 }
 
