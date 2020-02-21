@@ -1,6 +1,28 @@
 // /* eslint-disable no-unused-vars */
 // import imagesloaded from 'imagesloaded';
 
+// Code1
+document.addEventListener("DOMContentLoaded", init, false); // Initialise the DOM Environment
+function init() {
+    window.addEventListener("load", reAlignImage, false);
+}
+
+// specific function to rectify the images
+function reAlignImage() {
+    var list0 = document.getElementsByTagName('img');
+    for(let i=0; i<list0.length; i++) {
+        list0[i].setAttribute('hidden', '');
+        list0[i].removeAttribute('hidden');
+    }
+}
+
+
+
+
+
+// Alternative code2
+// // imagesloaded(reAlignImage);
+
 // imagesloaded(rectifyImages);
 
 // function rectifyImages () {
@@ -10,27 +32,31 @@
 //     }
 //     // specific function to rectify the images
 //     function reAlignImage() {
-//         var list1 = document.getElementsByClassName('views-left1');
-//         for(let item=0; item<list1.length; item++) {
-//             item.setAttribute('hidden', '');
-//             item.removeAttribute('hidden');
+//         var list0 = document.getElementsByTagName('img');
+//         for(let i=0; i<list0.length; i++) {
+//             list0[i].setAttribute('hidden', '');
+//             // list0[i].removeAttribute('hidden');
 //         }
 //     }
 // }
 
 
 
-document.addEventListener("DOMContentLoaded", init, false); // Initialise the DOM Environment
-function init() {
-    window.addEventListener("load", reAlignImage, false);
-}
+// // Alternative code3
+// // specific function to rectify the images
+// function reAlignImage() {
+//     var list0 = document.getElementsByTagName('img');
+//     list0.innerHTML(alert("Hello Cyber!!"));
+//     // for(let i=0; i<list0.length; i++) {
+//     //     list0[i].setAttribute('hidden', '');
+//     //     // list0[i].removeAttribute('hidden');
+//     // }
+// }
 
-// specific function to rectify the images
-function reAlignImage() {
-    var list1 = document.getElementsByClassName('views-left1');
-    for(let item=0; item<list1.length; item++) {
-        list1[item].setAttribute('hidden', '');
-        // list1[item].removeAttribute('hidden');
-    }
-}
+
+
+
+
+
+
 
