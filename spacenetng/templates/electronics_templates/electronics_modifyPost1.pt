@@ -295,20 +295,11 @@
 
     <div class="right-wing-home">
         <div class="customSearch">
-            This should contain a custom google search engine.
+            <!-- This should contain a custom google search engine. -->
         </div>
         <!--spcaenetng connecting people..., a place where market users meet this 
         should be a blinking slide, inside the "Place Holder-->  
-        <div class="ads">
-            <h2 id="cryptoPageLink-heading">
-                Hello there! are you an investor in the Crypto industry?
-            </h2>       
-            Would you like to invest in one of the best blockchain projects in the cryptocurrency
-            world out there? you are in the right place, as i got you covered!!
-            <br>
-            <br>
-            <span id="cryptoPageLink-link"><a href="cryptoPageLink-link"><a href="${request.static_url('spacenetng:static/cryptocurrency/crypto_index.html')}">Click here to learn more &gt;&gt;&gt;</a></span>
-        </div>
+        <div class="ads"><!--Forex Brokers--></div>
         <br>
 
         <div class="ads"><!--Forex Brokers--></div>
