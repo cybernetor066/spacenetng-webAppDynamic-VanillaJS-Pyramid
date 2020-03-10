@@ -697,7 +697,20 @@
         </div>
         <!--spcaenetng connecting people..., a place where market users meet this 
         should be a blinking slide, inside the "Place Holder-->  
-        <div class="ads-home"><!--Forex Brokers--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds1 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="1965141333"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
 
         <div class="ads-home"><!--Forex Brokers--></div>
