@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Buy & Sell Products/Services</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160437963-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-160437963-1');
+        </script>
+        <title>Buy and Sell Products and Services locally in Nigeria.</title>
         <meta charset="UTF-8" />    <!--Character encoding.-->
         <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+        <meta name="description" content="Spacenetng provides an avenue to link both buyers and sellers together locally in Nigeria. 
+        Here in spacenetng.com, you can buy phones, cars, real estate properties and wears in any type of condition from london used, locally
+        used to brand new" />
         <link type="text/css" rel="stylesheet"  href="${request.static_url('spacenetng:static/cssfiles/spacenetngCSS.css')}" />  <!--Linking to an external css file-->
         <link type="image/png" rel="icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/>
         <link type="image/png" rel="apple-touch-icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/> <!--For apple devices-->
@@ -792,25 +803,116 @@
         </div>
         <br>
 
-        <div class="ads-home"><!--Aliexpress--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds2 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="1387676392"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>        
+        </div>
         <br>
 
-        <div class="ads-home"><!--Freelance, work from home--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds3 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="3527303310"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>        
+        </div>
         <br>
 
-        <div class="ads-home"><!--Ebay--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds4 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="9179564178"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>        
+        </div>
         <br>
 
-        <div class="ads-home"><!--Jumia--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds5 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="3307811463"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>        
+        </div>
         <br>
 
-        <div class="ads-home"><!--MongoDB--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds6 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="6784022044"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>        
+        </div>
         <br>
         
-        <div class="ads-home"><!--Betting site1--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds7 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="8013343236"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>        
+        </div>
         <br>
 
-        <div class="ads-home"><!--Betting site1--></div>
+        <div class="ads-home">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- MyAds8 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6448479699177453"
+                data-ad-slot="6700261561"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>        
+        </div>
 
     </div>
         

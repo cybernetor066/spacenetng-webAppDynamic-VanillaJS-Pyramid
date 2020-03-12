@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160437963-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-160437963-1');
+        </script>    
         <title>Buy & Sell Products/Services</title>
         <meta charset="UTF-8" />    <!--Character encoding.-->
         <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
@@ -414,19 +422,84 @@
             </div>
             <!--spcaenetng connecting people..., a place where market users meet this 
             should be a blinking slide, inside the "Place Holder-->  
-            <div class="ads"><!--Forex Brokers--></div>
+            <div class="ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- MyAds1 -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6448479699177453"
+                    data-ad-slot="1965141333"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>                
+            </div>
             <br>
     
-            <div class="ads"><!--Forex Brokers--></div>
+            <div class="ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- MyAds2 -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6448479699177453"
+                    data-ad-slot="1387676392"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>            
+            </div>
             <br>
     
-            <div class="ads"><!--Aliexpress--></div>
+            <div class="ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- MyAds3 -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6448479699177453"
+                    data-ad-slot="3527303310"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>             
+            </div>
             <br>
     
-            <div class="ads"><!--Freelance, work from home--></div>
+            <div class="ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- MyAds4 -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6448479699177453"
+                    data-ad-slot="9179564178"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>             
+            </div>
             <br>
     
-            <div class="ads"><!--Ebay--></div>
+            <div class="ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- MyAds5 -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6448479699177453"
+                    data-ad-slot="3307811463"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>            
+            </div>
             <br>         
         </div>
         

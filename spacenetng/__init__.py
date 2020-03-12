@@ -80,8 +80,14 @@ def main(global_config, **settings):
     config.add_route('fashion_viewProducts2_page5', '/fashion_viewProducts2_page5')
 
 
-    # ##########################################################################################
+    # ADS.txt route
+    # ****************************************************************************************
+    config.add_route('adsDotTxt', '/adsDotTxt')
+
+
+
     # Other configurations
+    # ****************************************************************************************
     config.add_static_view(name='static', path='spacenetng:static')
     config.scan('.views')
     return config.make_wsgi_app()
