@@ -763,13 +763,11 @@
         </div>    
     </div>
 
-    
-    
-    
-    
-    
+        
+            
     
     <div class="right-wing-home">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <div class="customSearch">
             <!-- This should contain a custom google search. -->
         </div>
@@ -788,7 +786,6 @@
 
 
         <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- MyAds1 -->
             <ins class="adsbygoogle"
                 style="display:block"
@@ -804,7 +801,6 @@
         <br>
 
         <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- MyAds2 -->
             <ins class="adsbygoogle"
                 style="display:block"
@@ -820,7 +816,6 @@
         <br>
 
         <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- MyAds3 -->
             <ins class="adsbygoogle"
                 style="display:block"
@@ -836,7 +831,6 @@
         <br>
 
         <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- MyAds4 -->
             <ins class="adsbygoogle"
                 style="display:block"
@@ -852,7 +846,6 @@
         <br>
 
         <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- MyAds5 -->
             <ins class="adsbygoogle"
                 style="display:block"
@@ -865,55 +858,6 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>        
         </div>
-        <br>
-
-        <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- MyAds6 -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-6448479699177453"
-                data-ad-slot="6784022044"
-                data-ad-format="auto"
-                data-full-width-responsive="true">
-            </ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>        
-        </div>
-        <br>
-        
-        <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- MyAds7 -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-6448479699177453"
-                data-ad-slot="8013343236"
-                data-ad-format="auto"
-                data-full-width-responsive="true">
-            </ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>        
-        </div>
-        <br>
-
-        <div class="ads-home">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- MyAds8 -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-6448479699177453"
-                data-ad-slot="6700261561"
-                data-ad-format="auto"
-                data-full-width-responsive="true">
-            </ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>        
-        </div>
-
     </div>
         
     </body>

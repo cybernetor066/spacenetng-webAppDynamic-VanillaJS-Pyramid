@@ -82,7 +82,7 @@ def main(global_config, **settings):
 
     # ADS.txt route
     # ****************************************************************************************
-    config.add_route('adsDotTxt', '/adsDotTxt')
+    config.add_route('adsDotTxt', '/ads.txt')
 
 
 
