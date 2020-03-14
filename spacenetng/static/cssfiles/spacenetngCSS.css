@@ -73,7 +73,7 @@ a {
   width: 350px;
 }
 
-.customSearch{background-color: darkmagenta; height: 38px; padding: 3px; }
+.customSearch{background-color: whitesmoke; height: 38px; padding: 3px; border-radius: 100px}
 
 .ads {
 border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
@@ -83,7 +83,10 @@ padding-left: 3px; border-bottom: solid brown; padding-bottom: 3px;
   border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
   padding-left: 3px; border-bottom: solid brown; padding-bottom: 3px;
   }
-
+.ads-last {
+  border-top: solid 5px white; margin-top: 5px; min-height: 168.5px;
+  padding-left: 3px; padding-bottom: 3px;
+}
 
 /* .ads-viewProducts-third{min-height: 100px !important; min-height: 100px !important;} */
 

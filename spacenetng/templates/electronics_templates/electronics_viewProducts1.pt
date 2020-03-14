@@ -380,21 +380,6 @@
             <!--spcaenetng connecting people..., a place where market users meet this 
             should be a blinking slide, inside the "Place Holder-->  
             <div class="ads">
-                <!-- MyAds1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-6448479699177453"
-                    data-ad-slot="1965141333"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true">
-                </ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>             
-            </div>
-            <br>
-    
-            <div class="ads">
                 <!-- MyAds2 -->
                 <ins class="adsbygoogle"
                     style="display:block"
@@ -409,20 +394,19 @@
             </div>
             <br>
     
-            <div class="ads ads-viewProducts-third">
-                <!-- MyAds3 -->
+            <div class="ads-last">
+                <!-- MyAds2 -->
                 <ins class="adsbygoogle"
                     style="display:block"
                     data-ad-client="ca-pub-6448479699177453"
-                    data-ad-slot="3527303310"
+                    data-ad-slot="1387676392"
                     data-ad-format="auto"
                     data-full-width-responsive="true">
                 </ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>             
-            </div>
-            <br>      
+                </script>            
+            </div>      
         </div>
         
     </body>
