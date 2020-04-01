@@ -700,7 +700,8 @@
     <div class="right-wing-home">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <div class="customSearch">
-            <!-- This should contain a custom google search engine. -->
+            <script async src="https://cse.google.com/cse.js?cx=009200007958999144058:6jcjbgy25xv"></script>
+            <div class="gcse-search"></div>
         </div>
         <!--spcaenetng connecting people..., a place where market users meet this 
         should be a blinking slide, inside the "Place Holder-->  

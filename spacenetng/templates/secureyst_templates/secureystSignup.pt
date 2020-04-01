@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160437963-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-160437963-1');
+        </script>    
+        <title>Secureyst Corona Tracker Signup Page</title>
+        <meta charset="UTF-8" />    <!--Character encoding.-->
+        <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+        <link type="text/css" rel="stylesheet"  href="${request.static_url('spacenetng:static/cssfiles/spacenetngCSS.css')}" />  <!--Linking to an external css file-->
+        <link type="text/css" rel="stylesheet" href="${request.static_url('spacenetng:static/tail.select/css/bootstrap4/tail.select-default.css')}"/>
+        <link type="image/png" rel="icon" href="${request.static_url('spacenetng:static/images/icon.png')}" sizes="200x200"/>
+        <link type="image/png" rel="apple-touch-icon" href="${request.static_url('spacenetng:static/images/icon.png')}"/> <!--For apple devices-->
+    </head>
+    
+
+    <body>
+        <div id="time-date" class="container_12 clearfix">
+            <div class="time-borders grid_12">
+                <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+            </div>
+            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/live-clock.js')}"></script>
+        </div>
+        <br style="clear: both;"/>
+ 
+        
+    <div id="first-div" class="container_12 clearfix">   <!--Main 12_Column container-->
+        <!-- Landing Page Content -->
+        <div id="create-new-post" class="grid_12">
+            <form action="${request.current_route_url()}" method="POST" enctype="multipart/form-data">
+                <script type="text/javascript" src="${request.static_url('spacenetng:static/tail.select/js/tail.select.js')}"></script>
+                <!-- // This script below is used to customise the default html select dropdown appearance. -->
+                <script type="text/javascript">
+                    document.addEventListener("DOMContentLoaded", () => {
+                        tail.select("select", {search: true, width: 200,});
+                    });
+                </script>
+            
+            <div class="box-n">
+                Please enter your bluetooth device name:
+                <label>
+                <input type="text" id="files" name="secureyst_signup_bluetoothName" required>
+                </label>
+            </div>
+            <br>
+
+            <div class="box-n contact-details">
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <label> <span class="contacta-z">Email:</span>
+                        <input type="email" name="secureyst_signup_email" maxlength="40" required>
+                    </label>
+                    <br>
+                    <br>
+
+                    <label> <span class="contacta-z">Mobile number:</span>
+                        <!-- Enter only digits from '0' to '9' -->
+                        <input type="text" pattern="[0-9]+" name="secureyst_signup_mobile" maxlength="15" required>
+                    </label>
+                    <br>
+                    <br>
+
+                    <label> <span class="contacta-z">Town/City:</span>
+                        <!--Using regular expression for matching purposes.-->
+                        <!-- Enter town/city name (upper and lowercase letters) -->
+                        <input type="text" pattern="[A-Za-z' -]+" name="secureyst_signup_city" maxlength="20" required>
+                    </label>
+
+                </fieldset>
+            </div>
+            <br>
+
+            <div class="box-n terms-conditions">
+                <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/embededScript1.js')}"></script>
+                <label for="checkbox1" class="container-checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox1" class="termscon" required onclick="mouseClick1()">
+                    Agree to our terms and conditions.
+                    <span class="checkmark-checkbox"></span>
+                </label>
+            </div>
+            <br>
+            
+            <div id="create">
+                <label for="final-submit">
+                    <input type="submit" value="Signup" id="final-submit" name="secureyst_signup_submitButton" >
+                </label>
+                <br/>
+            </div>            
+            </form>    
+
+        </div>
+        <br style="clear: both;">
+        <br>
+        <br>
+        <div id="footer">&copy;Copyright 2020 www.spacenetng.com 
+            <br />All Rights Reserved.
+        </div>    
+    </div>
+
+    </body>
+
+</html>

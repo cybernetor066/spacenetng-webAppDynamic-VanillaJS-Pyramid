@@ -11591,3 +11591,431 @@ class FashionViewProductsViews(object):
 # ***************************************************************************************************************************
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+# SECUREYST VIEWS
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+
+# ########################################################################################################################
+# ########################################################################################################################
+# ########################################################################################################################
+# Signup
+@view_defaults(route_name='secureystSignup')
+class SecureystCreateAccount(object):
+    def __init__(self, request):
+        self.request = request
+
+    # *************************************************************************************************************
+    # *************************************************************************************************************
+    @view_config(renderer='templates/secureyst_templates/secureystSignup.pt')
+    def secureYst_signup(self):
+        return {}
+
+    # *************************************************************************************************************
+    # *************************************************************************************************************
+    @view_config(request_method='POST')
+    def secureYst_signupResponse(self):
+        from pyramid.httpexceptions import HTTPFound
+        import pyramid.httpexceptions as exc
+
+        # Collect variables from form fields
+        # Get text items from form page
+        secureyst_signup_bluetoothName = self.request.params['secureyst_signup_bluetoothName']
+        secureyst_signup_city = self.request.params['secureyst_signup_city']
+        secureyst_signup_mobile = self.request.params['secureyst_signup_mobile']
+        secureyst_signup_email = self.request.params['secureyst_signup_email']
+
+        # Create other backend variables
+        # Create a UUID number
+        import uuid
+        secureyst_signup_privateUUID = uuid.uuid4()
+
+        # Get specific date
+        import datetime
+        secureyst_signup_dateTime = datetime.datetime.utcnow()
+
+
+        # Create our RES API structure and push data to the RES
+        secureyst_signup_resAPI_json = {
+            "Bluetooth Name": "",
+            "City": "",
+            "Mobile": "",
+            "date": "",
+        }
+
+        secureyst_signup_resAPI_json["Bluetooth Name"] = secureyst_signup_bluetoothName
+        secureyst_signup_resAPI_json["Private UUID"] = secureyst_signup_privateUUID
+        secureyst_signup_resAPI_json["City"] = secureyst_signup_city
+        secureyst_signup_resAPI_json["Mobile"] = secureyst_signup_mobile
+        secureyst_signup_resAPI_json["Email"] = secureyst_signup_email
+        secureyst_signup_resAPI_json["date"] = secureyst_signup_dateTime
+
+
+
+        # Initialise database connection and perform CRUD operation on text
+        import pymongo
+        from pymongo import MongoClient
+
+        # Extract connection string from enviroment variables
+        import os
+        from dotenv import load_dotenv
+        load_dotenv()
+        connection_string = os.environ['MY_CONNECTION_STRING']
+
+        # Open database connection and get or create a database called secureyst_database
+        import dns
+        client = MongoClient('%s' % connection_string)
+        db = client.secureyst_database
+
+        # Create or open a text based records collection called secureyst_text_collection
+        secureyst_text_collection= db.secureyst_text_collection
+
+
+
+        # # ############################################################################################
+        # # Send private UUID to user's Email using login details and gmail server using inbuilt python email package
+        import smtplib, os, sys
+        from smtplib import SMTP
+        from email.message import EmailMessage
+        from dotenv import load_dotenv
+        load_dotenv()
+
+        try:
+            email_content = ("""\
+            Hello %s, thanks for signing up on our health platform, Please be advised, a private user UUID has been created for youand it should be kept confidential.\n
+            Here is your Seceret hey: %s\n
+            For support and enquiries please contact us via our contact details found on our contact page in our website.\n
+            Thanks for using this service, we hope to serve you better!!.
+            """
+            % (secureyst_signup_bluetoothName, secureyst_signup_privateUUID)
+            
+            )
+
+            msg = EmailMessage()
+            msg.set_content(email_content)
+
+            msg['Subject'] = 'Your UUID from Secureyst (Powered by Spacenetng.com)'
+            msg['From'] = 'spacenetngbase@gmail.com'
+            msg['To'] = secureyst_signup_email
+
+            server_ssl = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+            server_ssl.ehlo()
+
+            email = os.environ['MY_EMAIL_ADDRESS']
+            passWord = os.environ['MY_EMAIL_PASSWORD']
+
+            server_ssl.login(email, passWord)
+            server_ssl.send_message(msg)       
+            server_ssl.quit()   # Terminate the SMTP session and free up resources       
+            
+            # Or And,
+            # print('Message sent successfully!!')
+
+        except:
+            pass
+            # Or
+            # print X
+
+
+        try:
+            ######################################################
+            res0 = secureyst_text_collection.find_one({'Bluetooth Name': secureyst_signup_bluetoothName})
+            res1 = res0['Bluetooth Name']
+            if res1 == secureyst_signup_bluetoothName:
+                # Redirect user back to signup page                     
+                body = (
+                    "<html style=\"color: red; background-color: whitesmoke; \">"
+                    "<head><meta http-equiv=\"refresh\" content=\"11;url=/secureyst/signup\"></head>"
+                    "<body>"
+                    "<h4>A user with same Bluetooth name is already registered on our COVID-19 Health platform "
+                    "please try again and use another unique bluetooth identifier."
+                    "<br />"
+                    "You will be redirected shortly to the signup page to try again."
+                    "</body>"
+                    "</html>"
+                )
+                return Response(body)
+            else:
+                raise exc.HTTPBadRequest()
+                    
+
+        except:
+            # Insert API into database and close our connected client's connection
+            secureyst_text_collection.insert_one(secureyst_signup_resAPI_json)
+
+            # Close our database connection and free up resources.
+            client.close()
+            
+
+            # Redirect user back to the questionaire page                     
+            body = (
+                "<html style=\"color: green; background-color: whitesmoke; \">"
+                "<head><meta http-equiv=\"refresh\" content=\"11;url=/secureyst/questionaire\"></head>"
+                "<body>"
+                "<h4>Thanks for using our service, you have been successfully registered on our COVID-19 Health platform"
+                "<br />"
+                "You will be redirected shortly to our questionaire page and where you can fill in our questionaire to track your"
+                "<br />"
+                "COVID-19 health status..</h4>"
+                "</body>"
+                "</html>"
+            )
+
+            return Response(body)
+
+
+
+
+
+# ########################################################################################################################
+# ########################################################################################################################
+# ########################################################################################################################
+# Login
+@view_defaults(route_name='secureystLogin')
+class SecureystLogin(object):
+    def __init__(self, request):
+        self.request = request
+
+    # *************************************************************************************************************
+    # *************************************************************************************************************
+    @view_config(renderer='templates/secureyst_templates/secureystLogin.pt')
+    def secureYst_login(self):
+        return {}
+
+    # *************************************************************************************************************
+    # *************************************************************************************************************
+    @view_config(request_method='POST', renderer='json')
+    def secureYst_loginResponse(self):
+        # Initialise database connection and perform CRUD operation on text collection
+        import pymongo
+        from pymongo import MongoClient
+        from bson import ObjectId
+        from uuid import UUID
+
+        # Extract connection string from enviroment variables
+        import os
+        from dotenv import load_dotenv
+        load_dotenv()
+        connection_string = os.environ['MY_CONNECTION_STRING']
+
+        # Open database connection and get or create a database called secureyst_database
+        import dns
+        client = MongoClient('%s' % connection_string)
+        db = client.secureyst_database
+
+        # Create or open a text based records collection called secureyst_text_collection
+        secureyst_text_collection = db.secureyst_text_collection
+
+        # Obtain request parameters from login 
+        secureyst_login_passcode = self.request.params['secureyst_login_passcode']
+
+        # Obtain our JSON Response
+        try:
+            # Delete operation on the main text collection initialisation
+            res0 = secureyst_text_collection.find_one({'Private UUID': UUID(secureyst_login_passcode)})
+            bluetoothName = res0['Bluetooth Name']
+            COVID19_status = res0['COVID-19 Status']
+
+            # Close our database connection and free up resources.
+            client.close()
+
+            return {
+                "Bluetooth Name": bluetoothName, "COVID19 Status": COVID19_status,
+            }
+
+
+        except:
+            body = (
+                "<html style=\"color: red; background-color: whitesmoke; \">"
+                "<body>"
+                "<h4>No account has been created yet for you, please kindly head back to the "
+                "<a href=\"/secureyst/signup\">signup page</a>"
+                "<br />"
+                "and register.</h4>"
+                "</body>"
+                "</html>"
+            )
+
+            return Response(body)
+
+
+
+
+
+
+
+
+
+
+# ########################################################################################################################
+# ########################################################################################################################
+# ########################################################################################################################
+# Questionaire
+@view_defaults(route_name='secureystQuestionaire')
+class SecureystQuestionaire(object):
+    def __init__(self, request):
+        self.request = request
+
+    # *************************************************************************************************************
+    # *************************************************************************************************************
+    @view_config(renderer='templates/secureyst_templates/secureystQuestionaire.pt')
+    def secureYst_questionaire(self):
+        return {}
+
+
+    # *************************************************************************************************************
+    # *************************************************************************************************************
+    @view_config(request_method='POST')
+    def secureYst_questionaireResponse(self):
+        from pyramid.httpexceptions import HTTPFound
+
+        # Collect variables from form fields
+        # Get text items from form page
+        secureyst_questionaire_passcode = self.request.params['secureyst_questionaire_passcode']
+        secureyst_questionaire_international_travel_history = self.request.params['international_travel_history']
+        secureyst_questionaire_fever= self.request.params['fever']
+        secureyst_questionaire_breathing_difficulty = self.request.params['breathing_difficulty']
+        secureyst_questionaire_body_pain = self.request.params['body_pain']
+        secureyst_questionaire_fatigue_weakness = self.request.params['fatigue_weakness']
+        secureyst_questionaire_sore_throat = self.request.params['sore_throat']
+        secureyst_questionaire_cough = self.request.params['cough']
+        secureyst_questionaire_diarrhoea = self.request.params['diarrhoea']
+        secureyst_questionaire_other_medical_conditions = self.request.params['other_medical_conditions']
+        secureyst_questionaire_48hrs_status = self.request.params['48hrs_status']
+        secureyst_questionaire_age = self.request.params['age']
+
+
+        markerList = [
+            secureyst_questionaire_international_travel_history, secureyst_questionaire_fever,
+            secureyst_questionaire_breathing_difficulty, secureyst_questionaire_body_pain,
+            secureyst_questionaire_fatigue_weakness, secureyst_questionaire_sore_throat,
+            secureyst_questionaire_cough, secureyst_questionaire_diarrhoea,
+            secureyst_questionaire_other_medical_conditions, secureyst_questionaire_48hrs_status,
+            secureyst_questionaire_age
+        ]
+
+
+        greenList = []
+        yellowList = []
+        redList = []
+
+        # Create other backend variables
+        # compute our covid19 status from captured data from questionaire
+        for color in markerList:
+            if color == 'green':
+                greenList.append(color)
+            elif color == 'yellow':
+                yellowList.append(color)
+            elif color == 'red':
+                redList.append(color)
+
+        if len(yellowList) > 3:
+            secureyst_questionaire_COVID19_status_update = "Caution Zone"
+        elif len(redList) > 0:
+            secureyst_questionaire_COVID19_status_update = "Danger Zone"
+        else:
+            secureyst_questionaire_COVID19_status_update = "Safe Zone"
+
+
+        # Get specific date
+        import datetime
+        secureyst_questionaire_dateTime = datetime.datetime.utcnow()
+
+        # Create our RES API structure and push data to the RES
+        secureyst_questionaire_resAPI_json = {
+            "COVID-19 Status": "",
+            "date": "",
+        }
+
+        # we are only updating the covid19 status
+        secureyst_questionaire_resAPI_json["COVID-19 Status"] = secureyst_questionaire_COVID19_status_update
+        secureyst_questionaire_resAPI_json["date"] = secureyst_questionaire_dateTime
+
+        # Initialise database connection and perform CRUD operation on text collection
+        import pymongo
+        from pymongo import MongoClient
+        from bson import ObjectId
+        from uuid import UUID
+
+        # Extract connection string from enviroment variables
+        import os
+        from dotenv import load_dotenv
+        load_dotenv()
+        connection_string = os.environ['MY_CONNECTION_STRING']
+
+        # Open database connection and get or create a database called secureyst_database
+        import dns
+        client = MongoClient('%s' % connection_string)
+        db = client.secureyst_database
+
+        # Create or open a text based records collection called secureyst_text_collection
+        secureyst_text_collection = db.secureyst_text_collection
+
+        # Insert API into database and close our connected client's connection
+        try:
+            # Delete operation on the main text collection initialisation
+            res0 = secureyst_text_collection.find_one({'Private UUID': UUID(secureyst_questionaire_passcode)})
+            res1 = res0['_id']
+
+            # Main text collection update
+            secureyst_text_collection.update_one({'_id': ObjectId(res1)}, {"$set": secureyst_questionaire_resAPI_json})
+
+            # Close our database connection and free up resources.
+            client.close()
+
+            body = (
+                "<html style=\"color: green; background-color: whitesmoke; \">"
+                "<body>"
+                "<h4>Thanks for using our service, your questionaire status has been updated successfully!! "
+                "<br />"
+                "You can close this page and head back to our mobile app.</h4>"
+                "</body>"
+                "</html>"
+            )
+
+            return Response(body)
+
+
+        except:
+            body = (
+                "<html style=\"color: red; background-color: whitesmoke; \">"
+                "<body>"
+                "<h4>No account has been created yet for you, please kindly head back to the "
+                "<a href=\"/secureyst/signup\">signup page</a>"
+                "<br />"
+                "and register.</h4>"
+                "</body>"
+                "</html>"
+            )
+
+            return Response(body)

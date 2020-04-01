@@ -85,6 +85,19 @@ def main(global_config, **settings):
     config.add_route('adsDotTxt', '/ads.txt')
 
 
+    # secureyst/login route
+    # ****************************************************************************************
+    config.add_route('secureystLogin', '/secureyst/login')
+
+    # secureyst/signup route
+    # ****************************************************************************************
+    config.add_route('secureystSignup', '/secureyst/signup')
+
+
+    # secureyst/questionaire route
+    # ****************************************************************************************
+    config.add_route('secureystQuestionaire', '/secureyst/questionaire')
+
 
     # Other configurations
     # ****************************************************************************************
