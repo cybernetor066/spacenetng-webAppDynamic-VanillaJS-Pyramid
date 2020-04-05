@@ -41,10 +41,18 @@
                     });
                 </script>
             
-            <div class="box-n">
+            <div class="">
                 Please enter your bluetooth device name:
                 <label>
-                <input type="text" id="files" name="secureyst_signup_bluetoothName" required>
+                <input type="text" id="bluetoothName" name="secureyst_signup_bluetoothName" required>
+                </label>
+                <br/>
+                <br/>
+
+
+                Enter your password:
+                <label>
+                <input type="password" id="passcode" name="secureyst_signup_password" required>
                 </label>
             </div>
             <br>

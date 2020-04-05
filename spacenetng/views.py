@@ -11651,34 +11651,26 @@ class SecureystCreateAccount(object):
         # Collect variables from form fields
         # Get text items from form page
         secureyst_signup_bluetoothName = self.request.params['secureyst_signup_bluetoothName']
+        secureyst_signup_password = self.request.params['secureyst_signup_password']
         secureyst_signup_city = self.request.params['secureyst_signup_city']
         secureyst_signup_mobile = self.request.params['secureyst_signup_mobile']
         secureyst_signup_email = self.request.params['secureyst_signup_email']
-
-        # Create other backend variables
-        # Create a UUID number
-        import uuid
-        secureyst_signup_privateUUID = uuid.uuid4()
-
-        # Get specific date
-        import datetime
-        secureyst_signup_dateTime = datetime.datetime.utcnow()
 
 
         # Create our RES API structure and push data to the RES
         secureyst_signup_resAPI_json = {
             "Bluetooth Name": "",
+            "Password": "",
             "City": "",
             "Mobile": "",
             "date": "",
         }
 
         secureyst_signup_resAPI_json["Bluetooth Name"] = secureyst_signup_bluetoothName
-        secureyst_signup_resAPI_json["Private UUID"] = secureyst_signup_privateUUID
+        secureyst_signup_resAPI_json["Password"] = secureyst_signup_password
         secureyst_signup_resAPI_json["City"] = secureyst_signup_city
         secureyst_signup_resAPI_json["Mobile"] = secureyst_signup_mobile
         secureyst_signup_resAPI_json["Email"] = secureyst_signup_email
-        secureyst_signup_resAPI_json["date"] = secureyst_signup_dateTime
 
 
 
@@ -11717,14 +11709,14 @@ class SecureystCreateAccount(object):
             For support and enquiries please contact us via our contact details found on our contact page in our website.\n
             Thanks for using this service, we hope to serve you better!!.
             """
-            % (secureyst_signup_bluetoothName, secureyst_signup_privateUUID)
+            % (secureyst_signup_bluetoothName, secureyst_signup_password)
             
             )
 
             msg = EmailMessage()
             msg.set_content(email_content)
 
-            msg['Subject'] = 'Your UUID from Secureyst (Powered by Spacenetng.com)'
+            msg['Subject'] = 'Your secure password from Secureyst (Powered by Spacenetng.com)'
             msg['From'] = 'spacenetngbase@gmail.com'
             msg['To'] = secureyst_signup_email
 
@@ -11780,13 +11772,11 @@ class SecureystCreateAccount(object):
             # Redirect user back to the questionaire page                     
             body = (
                 "<html style=\"color: green; background-color: whitesmoke; \">"
-                "<head><meta http-equiv=\"refresh\" content=\"11;url=/secureyst/questionaire\"></head>"
+                "<head><meta http-equiv=\"refresh\" content=\"11;url=/secureyst/login\"></head>"
                 "<body>"
                 "<h4>Thanks for using our service, you have been successfully registered on our COVID-19 Health platform"
                 "<br />"
-                "You will be redirected shortly to our questionaire page and where you can fill in our questionaire to track your"
-                "<br />"
-                "COVID-19 health status..</h4>"
+                ".</h4>"
                 "</body>"
                 "</html>"
             )
@@ -11820,7 +11810,6 @@ class SecureystLogin(object):
         import pymongo
         from pymongo import MongoClient
         from bson import ObjectId
-        from uuid import UUID
 
         # Extract connection string from enviroment variables
         import os
@@ -11837,20 +11826,25 @@ class SecureystLogin(object):
         secureyst_text_collection = db.secureyst_text_collection
 
         # Obtain request parameters from login 
-        secureyst_login_passcode = self.request.params['secureyst_login_passcode']
+        secureyst_login_bluetoothName = self.request.params['secureyst_login_bluetoothName']
+        secureyst_login_password = self.request.params['secureyst_login_password']
+
 
         # Obtain our JSON Response
         try:
             # Delete operation on the main text collection initialisation
-            res0 = secureyst_text_collection.find_one({'Private UUID': UUID(secureyst_login_passcode)})
-            bluetoothName = res0['Bluetooth Name']
-            COVID19_status = res0['COVID-19 Status']
+            userPassword = secureyst_text_collection.find_one({'Password': secureyst_login_password})
+            bluetoothName = secureyst_text_collection.find_one({'Bluetooth Name': secureyst_login_bluetoothName})
+
+            # unneccessary query to doublecheck for BluetoothName existence with password
+            bluetoothName1 = userPassword['Bluetooth Name']
+            bluetoothName2 = bluetoothName['Bluetooth Name']
 
             # Close our database connection and free up resources.
             client.close()
 
             return {
-                "Bluetooth Name": bluetoothName, "COVID19 Status": COVID19_status,
+                "Bluetooth Name1": bluetoothName1, "Bluetooth Name2": bluetoothName2,
             }
 
 
@@ -11858,7 +11852,7 @@ class SecureystLogin(object):
             body = (
                 "<html style=\"color: red; background-color: whitesmoke; \">"
                 "<body>"
-                "<h4>No account has been created yet for you, please kindly head back to the "
+                "<h4>No account found for this Bluetooth name and passsword, please try again with correct login details or kindly head back to the "
                 "<a href=\"/secureyst/signup\">signup page</a>"
                 "<br />"
                 "and register.</h4>"

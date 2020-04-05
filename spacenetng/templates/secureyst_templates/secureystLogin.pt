@@ -43,9 +43,16 @@
                 </script>
             
             <div>
-                Please enter login passcode:
+                Please enter your bluetooth name:
                 <label>
-                <input type="text" id="files" name="secureyst_login_passcode" required>
+                <input type="text" id="bluetoothName" name="secureyst_login_bluetoothName" required>
+                </label>
+                <br/>
+                <br/>
+                
+                Enter password:
+                <label>
+                <input type="password" id="password" name="secureyst_login_password" required>
                 </label>
             </div>
             <br>
