@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using pyramid"
+    />
+    <title>Ahsan Listings</title>
+    <link type="text/css" rel="stylesheet"  href="${request.static_url('spacenetng:static/cssfiles/spacenetngCSS.css')}" />  <!--Linking to an external css file-->
+  </head>
+  
+  <body>
+        <div id="time-date" class="">
+            <div class="time-borders">
+                <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+            </div>
+            <script type="text/javascript" src="${request.static_url('spacenetng:static/jSfiles/live-clock.js')}"></script>
+        </div>
+        <!-- <br/> -->
+
+  <!-- jjj -->
+
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <div class="container1">
+      <div class="main"><p>Main</p></div>
+      <div class="searchbox"><p>Search</p></div>
+    </div>
+
+
+<!-- Examples -->
+    <!-- <div class="container2">
+      <div id="item1">col1</div>
+      <div id="item2">col2</div>
+      <div id="item3">col3</div>
+      <div id="item4">col4</div>
+      <div id="item5">col5</div>
+      <div id="item6">col6</div>
+      <div id="item7">col7</div>
+      <div id="item8">col8</div>
+      <div id="item9">col9</div>
+      <div id="item10">col10</div>
+    </div>
+     -->
+
+    <div class="container2">
+      <div id="categories"><h2>Categories</h2></div>
+    </div>
+
+    <div class="container3">
+      <div id="aircons">
+        <a href= ${category_AC_link}>
+          <img src=${category_AC_image} alt="">
+          <h2>${category_AC_name}</h2>
+        </a>
+      </div>
+
+      <div id="mobiles">
+        <a href= ${category_mobile_link}>
+          <img src=${category_mobile_image} alt="">
+          <h2>${category_mobile_name}</h2>
+        </a>
+      </div>
+      <div id="tvs">
+        <a href= ${category_tv_link}>
+          <img src=${category_tv_image} alt="">
+          <h2>${category_tv_name}</h2>
+        </a>
+      </div>
+      <div id="fridge">
+        <a href= ${category_fridge_link}>
+          <img src=${category_fridge_image} alt="">
+          <h2>${category_fridge_name}</h2>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="container4">
+      <div id="mobilesHeading"><h2>Latest Arrivals in Mobiles And Televisions</h2></div>
+    </div>
+
+    <div class="container5">
+      <div id="item1-1">
+        <a href=${secondarySubCategory_link1} >
+          <img src=${secondarySubCategory_image1} >
+          <br>${secondarySubCategory_name1}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price1}</strong>
+      </div>
+
+      <div id="item2"></div>
+
+      <div id="item3"><p>Item3</p></div>
+      <div id="item4"><p>Item4</p></div>
+      <div id="item5"><p>Item5</p></div>
+      <div id="item6"><p>Item6</p></div>
+      <div id="item7"><p>Item7</p></div>
+      <div id="item8"><p>Item8</p></div>
+      <div id="item9"><p>Item9</p></div>
+      <div id="item10"><p>Item10</p></div>
+      <div id="item11"><p>Item11</p></div>
+      <div id="item12"><p>Item12</p></div>
+      <div id="item13"><p>Item13</p></div>
+      <div id="item14"><p>Item14</p></div>
+      <div id="item15"><p>Item15</p></div>
+      <div id="item16"><p>Item16</p></div>
+      <div id="item17"><p>Item17</p></div>
+      <div id="item18"><p>Item18</p></div>
+      <div id="item19"><p>Item19</p></div>
+      <div id="item20"><p>Item20</p></div>
+      <div id="item21"><p>Item21</p></div>
+      <div id="item22"><p>Item22</p></div>
+      <div id="item23"><p>Item23</p></div>
+      <div id="item24"><p>Item24</p></div>
+      <div id="item25"><p>Item25</p></div>
+      <div id="item26"><p>Item26</p></div>
+    </div>
+
+
+    <div class="container6">
+      <div id="secondCategories"><h2>Categories Latest</h2></div>
+    </div>
+
+    <div class="container7">
+      <div id="item1">
+        <a href=${primarySubCategory_link1} >
+          <img src=${primarySubCategory_image1} alt="" >
+          <h3>${primarySubCategory_name1}</h3>
+        </a>
+      </div>
+      
+      <div id="item2"><p>Item2</p></div>
+      <div id="item3"><p>Item3</p></div>
+      <div id="item4"><p>Item4</p></div>
+      <div id="item5"><p>Item5</p></div>
+      <div id="item6"><p>Item6</p></div>
+      <div id="item7"><p>Item7</p></div>
+      <div id="item8"><p>Item8</p></div>
+      <div id="item9"><p>Item9</p></div>
+      <div id="item10"><p>Item10</p></div>
+      <div id="item11"><p>Item11</p></div>
+      <div id="item12"><p>Item12</p></div>
+      <div id="item13"><p>Item13</p></div>
+      <div id="item14"><p>Item14</p></div>
+      <div id="item15"><p>Item15</p></div>
+      <div id="item16"><p>Item16</p></div>
+    </div>
+
+
+  </body>
+</html>

@@ -99,6 +99,10 @@ def main(global_config, **settings):
     config.add_route('secureystQuestionaire', '/secureyst/questionaire')
 
 
+    # ahsan route
+    # ****************************************************************************************
+    config.add_route('ahsanListings', '/ahsan/listings')
+
     # Other configurations
     # ****************************************************************************************
     config.add_static_view(name='static', path='spacenetng:static')

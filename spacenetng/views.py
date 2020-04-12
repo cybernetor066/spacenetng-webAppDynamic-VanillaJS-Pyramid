@@ -12013,3 +12013,553 @@ class SecureystQuestionaire(object):
             )
 
             return Response(body)
+
+
+
+
+
+
+
+
+
+
+
+
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+# AHSAN LISTINGS VIEWS
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+# ***************************************************************************************************************************
+
+# ########################################################################################################################
+# ########################################################################################################################
+# ########################################################################################################################
+# Index
+@view_defaults(route_name='ahsanListings')
+class AhsanListingsIndex(object):
+    def __init__(self, request):
+        self.request = request
+
+    # *************************************************************************************************************
+    # *************************************************************************************************************
+    @view_config(renderer='templates/ahsan_templates/index.pt')
+    def ahsan_home(self):
+        #################################################
+        # Then connect to our database and extract document
+        import pymongo
+        from pymongo import MongoClient
+        from bson import ObjectId
+
+        # Extract connection string from enviroment variables
+        import os
+        from dotenv import load_dotenv
+        load_dotenv()
+        connection_string = os.environ['MY_CONNECTION_STRING']
+
+        # Open database connection and get or create a database called ahsan_database
+        import dns
+        client = MongoClient('%s' % connection_string)
+        db = client.ahsan_database
+
+        # Create or open a text based records collection called category_text_collection
+        category_text_collection = db.category_text_collection
+
+        # Create or open a text based records collection called primarySubCategory_text_collection
+        primarySubCategory_text_collection = db.primarySubCategory_text_collection
+
+        # Create or open a text based records collection called secondarySubCategory_text_collection
+        secondarySubCategory_text_collection = db.secondarySubCategory_text_collection
+
+
+        # Extracting
+        category_JSON = category_text_collection.find().sort([("_id", pymongo.ASCENDING)])
+        primarySubCategory_JSON = primarySubCategory_text_collection.find().sort([("_id", pymongo.ASCENDING)])
+        secondarySubCategory_JSON = secondarySubCategory_text_collection.find().sort([("_id", pymongo.ASCENDING)])
+
+        # *********************************************************************************
+        # Category Variables
+        # Collecting variables for air conditionals
+        category_AC_name = category_JSON[0]["CategoryNames"][0]
+        category_AC_image = category_JSON[0]["CategoryImages"][0]
+        category_AC_link = category_JSON[0]["CategoryLinks"][0]
+
+        # Collecting variables for mobile phones
+        category_mobile_name = category_JSON[0]["CategoryNames"][1]
+        category_mobile_image = category_JSON[0]["CategoryImages"][1]
+        category_mobile_link = category_JSON[0]["CategoryLinks"][1]
+
+        # Collecting variables for televisions
+        category_tv_name = category_JSON[0]["CategoryNames"][2]
+        category_tv_image = category_JSON[0]["CategoryImages"][2]
+        category_tv_link = category_JSON[0]["CategoryLinks"][2]
+
+        # Collecting variables for refrigerators
+        category_fridge_name = category_JSON[0]["CategoryNames"][3]
+        category_fridge_image = category_JSON[0]["CategoryImages"][3]
+        category_fridge_link = category_JSON[0]["CategoryLinks"][3]
+
+
+        # *********************************************************************************
+        # primarySubCategory Variables
+        # variables1
+        primarySubCategory_name1 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][0]
+        primarySubCategory_image1 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][0]
+        primarySubCategory_link1 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][0]
+
+        # variables2
+        primarySubCategory_name2 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][1]
+        primarySubCategory_image2 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][1]
+        primarySubCategory_link2 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][1]
+
+        # variables3
+        primarySubCategory_name3 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][2]
+        primarySubCategory_image3 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][2]
+        primarySubCategory_link3 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][2]
+
+        # variables4
+        primarySubCategory_name4 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][3]
+        primarySubCategory_image4 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][3]
+        primarySubCategory_link4 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][3]
+
+        # variables5
+        primarySubCategory_name5 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][4]
+        primarySubCategory_image5 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][4]
+        primarySubCategory_link5 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][4]
+
+        # variables6
+        primarySubCategory_name6 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][5]
+        primarySubCategory_image6 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][5]
+        primarySubCategory_link6 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][5]
+
+        # variables7
+        primarySubCategory_name7 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][6]
+        primarySubCategory_image7 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][6]
+        primarySubCategory_link7 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][6]
+
+        # variables8
+        primarySubCategory_name8 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][7]
+        primarySubCategory_image8 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][7]
+        primarySubCategory_link8 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][7]
+
+        # variables9
+        primarySubCategory_name9 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][8]
+        primarySubCategory_image9 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][8]
+        primarySubCategory_link9 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][8]
+
+        # variables10
+        primarySubCategory_name10 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][9]
+        primarySubCategory_image10 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][9]
+        primarySubCategory_link10 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][9]
+
+        # variables11
+        primarySubCategory_name11 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][10]
+        primarySubCategory_image11 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][10]
+        primarySubCategory_link11 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][10]
+
+        # variables12
+        primarySubCategory_name12 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][11]
+        primarySubCategory_image12 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][11]
+        primarySubCategory_link12 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][11]
+
+        # variables13
+        primarySubCategory_name13 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][12]
+        primarySubCategory_image13 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][12]
+        primarySubCategory_link13 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][12]        
+
+        # variables14
+        primarySubCategory_name14 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][13]
+        primarySubCategory_image14 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][13]
+        primarySubCategory_link14 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][13]
+
+        # variables15
+        primarySubCategory_name15 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][14]
+        primarySubCategory_image15 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][14]
+        primarySubCategory_link15 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][14]
+
+        # variables16
+        primarySubCategory_name16 = primarySubCategory_JSON[0]["PrimarySubCategoryNames"][15]
+        primarySubCategory_image16 = primarySubCategory_JSON[0]["PrimarySubCategoryImages"][15]
+        primarySubCategory_link16 = primarySubCategory_JSON[0]["PrimarySubCategoryLinks"][15]
+
+
+
+
+        # *********************************************************************************
+        # secondarySubCategory Variables
+        # variables1
+        secondarySubCategory_name1 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][0]
+        secondarySubCategory_image1 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][0]
+        secondarySubCategory_link1 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][0]
+        secondarySubCategory_price1 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][0]
+
+        # variables2
+        secondarySubCategory_name2 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][1]
+        secondarySubCategory_image2 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][1]
+        secondarySubCategory_link2 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][1]
+        secondarySubCategory_price2 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][1]
+
+        # variables3
+        secondarySubCategory_name3 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][2]
+        secondarySubCategory_image3 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][2]
+        secondarySubCategory_link3 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][2]
+        secondarySubCategory_price3 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][2]
+
+        # variables4
+        secondarySubCategory_name4 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][3]
+        secondarySubCategory_image4 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][3]
+        secondarySubCategory_link4 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][3]
+        secondarySubCategory_price4 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][3]
+
+        # variables5
+        secondarySubCategory_name5 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][4]
+        secondarySubCategory_image5 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][4]
+        secondarySubCategory_link5 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][4]
+        secondarySubCategory_price5 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][4]
+
+        # variables6
+        secondarySubCategory_name6 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][5]
+        secondarySubCategory_image6 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][5]
+        secondarySubCategory_link6 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][5]
+        secondarySubCategory_price6 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][5]
+
+        # variables7
+        secondarySubCategory_name7 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][6]
+        secondarySubCategory_image7 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][6]
+        secondarySubCategory_link7 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][6]
+        secondarySubCategory_price7 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][6]
+
+        # variables8
+        secondarySubCategory_name8 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][7]
+        secondarySubCategory_image8 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][7]
+        secondarySubCategory_link8 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][7]
+        secondarySubCategory_price8 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][7]
+
+        # variables9
+        secondarySubCategory_name9 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][8]
+        secondarySubCategory_image9 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][8]
+        secondarySubCategory_link9 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][8]
+        secondarySubCategory_price9 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][8]
+
+        # variables10
+        secondarySubCategory_name10 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][9]
+        secondarySubCategory_image10 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][9]
+        secondarySubCategory_link10 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][9]
+        secondarySubCategory_price10 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][9]
+
+        # variables11
+        secondarySubCategory_name11 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][10]
+        secondarySubCategory_image11 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][10]
+        secondarySubCategory_link11 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][10]
+        secondarySubCategory_price11 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][10]
+
+        # variables12
+        secondarySubCategory_name12 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][11]
+        secondarySubCategory_image12 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][11]
+        secondarySubCategory_link12 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][11]
+        secondarySubCategory_price12 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][11]
+
+        # variables13
+        secondarySubCategory_name13 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][12]
+        secondarySubCategory_image13 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][12]
+        secondarySubCategory_link13 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][12]
+        secondarySubCategory_price13 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][12]
+
+        # variables14
+        secondarySubCategory_name14 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][13]
+        secondarySubCategory_image14 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][13]
+        secondarySubCategory_link14 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][13]
+        secondarySubCategory_price14 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][13]
+
+        # variables15
+        secondarySubCategory_name15 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][14]
+        secondarySubCategory_image15 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][14]
+        secondarySubCategory_link15 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][14]
+        secondarySubCategory_price15 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][14]
+
+        # variables16
+        secondarySubCategory_name16 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][15]
+        secondarySubCategory_image16 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][15]
+        secondarySubCategory_link16 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][15]
+        secondarySubCategory_price16 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][15]
+
+        # variables17
+        secondarySubCategory_name17 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][16]
+        secondarySubCategory_image17 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][16]
+        secondarySubCategory_link17 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][16]
+        secondarySubCategory_price17 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][16]
+
+        # variables18
+        secondarySubCategory_name18 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][17]
+        secondarySubCategory_image18 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][17]
+        secondarySubCategory_link18 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][17]
+        secondarySubCategory_price18 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][17]
+
+        # variables19
+        secondarySubCategory_name19 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][18]
+        secondarySubCategory_image19 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][18]
+        secondarySubCategory_link19 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][18]
+        secondarySubCategory_price19 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][18]
+
+        # variables20
+        secondarySubCategory_name20 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][19]
+        secondarySubCategory_image20 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][19]
+        secondarySubCategory_link20 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][19]
+        secondarySubCategory_price20 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][19]
+
+        # variables21
+        secondarySubCategory_name21 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][20]
+        secondarySubCategory_image21 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][20]
+        secondarySubCategory_link21 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][20]
+        secondarySubCategory_price21 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][20]
+
+        # variables22
+        secondarySubCategory_name22 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][21]
+        secondarySubCategory_image22 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][21]
+        secondarySubCategory_link22 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][21]
+        secondarySubCategory_price22 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][21]
+
+        # variables23
+        secondarySubCategory_name23 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][22]
+        secondarySubCategory_image23 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][22]
+        secondarySubCategory_link23 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][22]
+        secondarySubCategory_price23 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][22]
+
+        # variables24
+        secondarySubCategory_name24 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][23]
+        secondarySubCategory_image24 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][23]
+        secondarySubCategory_link24 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][23]
+        secondarySubCategory_price24 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][23]
+
+        # variables25
+        secondarySubCategory_name25 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][24]
+        secondarySubCategory_image25 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][24]
+        secondarySubCategory_link25 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][24]
+        secondarySubCategory_price25 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][24]
+
+        # variables26
+        secondarySubCategory_name26 = secondarySubCategory_JSON[0]["SecondarySubCategoryNames"][25]
+        secondarySubCategory_image26 = secondarySubCategory_JSON[0]["SecondarySubCategoryImages"][25]
+        secondarySubCategory_link26 = secondarySubCategory_JSON[0]["SecondarySubCategoryLinks"][25]
+        secondarySubCategory_price26 = secondarySubCategory_JSON[0]["SecondarySubCategoryPrice"][25]
+
+
+        # Close our connection and free up some resources 
+        client.close()
+        return {
+            # Category dictionairies
+            "category_AC_name": category_AC_name,
+            "category_AC_image": category_AC_image,
+            "category_AC_link": category_AC_link,
+
+            "category_mobile_name": category_mobile_name,
+            "category_mobile_image": category_mobile_image,
+            "category_mobile_link": category_mobile_link,
+            
+            "category_tv_name": category_tv_name,
+            "category_tv_image": category_tv_image,
+            "category_tv_link": category_tv_link,
+
+            "category_fridge_name": category_fridge_name,
+            "category_fridge_image": category_fridge_image,
+            "category_fridge_link": category_fridge_link,
+
+            # For primary subccategories
+            "primarySubCategory_name1": primarySubCategory_name1,
+            "primarySubCategory_image1": primarySubCategory_image1,
+            "primarySubCategory_link1": primarySubCategory_link1,
+
+            "primarySubCategory_name2": primarySubCategory_name2,
+            "primarySubCategory_image2": primarySubCategory_image2,
+            "primarySubCategory_link2": primarySubCategory_link2,
+
+            "primarySubCategory_name3": primarySubCategory_name3,
+            "primarySubCategory_image3": primarySubCategory_image3,
+            "primarySubCategory_link3": primarySubCategory_link3,
+
+            "primarySubCategory_name4": primarySubCategory_name4,
+            "primarySubCategory_image4": primarySubCategory_image4,
+            "primarySubCategory_link4": primarySubCategory_link4,
+
+            "primarySubCategory_name5": primarySubCategory_name5,
+            "primarySubCategory_image5": primarySubCategory_image5,
+            "primarySubCategory_link5": primarySubCategory_link5,
+
+            "primarySubCategory_name6": primarySubCategory_name6,
+            "primarySubCategory_image6": primarySubCategory_image6,
+            "primarySubCategory_link6": primarySubCategory_link6,
+
+            "primarySubCategory_name7": primarySubCategory_name7,
+            "primarySubCategory_image7": primarySubCategory_image7,
+            "primarySubCategory_link7": primarySubCategory_link7,
+
+            "primarySubCategory_name8": primarySubCategory_name8,
+            "primarySubCategory_image8": primarySubCategory_image8,
+            "primarySubCategory_link8": primarySubCategory_link8,
+
+            "primarySubCategory_name9": primarySubCategory_name9,
+            "primarySubCategory_image9": primarySubCategory_image9,
+            "primarySubCategory_link9": primarySubCategory_link9,
+
+            "primarySubCategory_name10": primarySubCategory_name10,
+            "primarySubCategory_image10": primarySubCategory_image10,
+            "primarySubCategory_link10": primarySubCategory_link10,
+
+            "primarySubCategory_name11": primarySubCategory_name11,
+            "primarySubCategory_image11": primarySubCategory_image11,
+            "primarySubCategory_link11": primarySubCategory_link11,
+
+            "primarySubCategory_name12": primarySubCategory_name12,
+            "primarySubCategory_image12": primarySubCategory_image12,
+            "primarySubCategory_link12": primarySubCategory_link12,
+
+            "primarySubCategory_name13": primarySubCategory_name13,
+            "primarySubCategory_image13": primarySubCategory_image13,
+            "primarySubCategory_link13": primarySubCategory_link13,
+
+            "primarySubCategory_name14": primarySubCategory_name14,
+            "primarySubCategory_image14": primarySubCategory_image14,
+            "primarySubCategory_link14": primarySubCategory_link14,
+
+            "primarySubCategory_name15": primarySubCategory_name15,
+            "primarySubCategory_image15": primarySubCategory_image15,
+            "primarySubCategory_link15": primarySubCategory_link15,
+
+            "primarySubCategory_name16": primarySubCategory_name16,
+            "primarySubCategory_image16": primarySubCategory_image16,
+            "primarySubCategory_link16": primarySubCategory_link16,
+
+
+            # For secondary subccategories
+            "secondarySubCategory_name1": secondarySubCategory_name1,
+            "secondarySubCategory_image1": secondarySubCategory_image1,
+            "secondarySubCategory_link1": secondarySubCategory_link1,
+            "secondarySubCategory_price1": secondarySubCategory_price1,
+
+            "secondarySubCategory_name2": secondarySubCategory_name2,
+            "secondarySubCategory_image2": secondarySubCategory_image2,
+            "secondarySubCategory_link2": secondarySubCategory_link2,
+            "secondarySubCategory_price2": secondarySubCategory_price2,
+
+            "secondarySubCategory_name3": secondarySubCategory_name3,
+            "secondarySubCategory_image3": secondarySubCategory_image3,
+            "secondarySubCategory_link3": secondarySubCategory_link3,
+            "secondarySubCategory_price3": secondarySubCategory_price3,
+
+            "secondarySubCategory_name4": secondarySubCategory_name4,
+            "secondarySubCategory_image4": secondarySubCategory_image4,
+            "secondarySubCategory_link4": secondarySubCategory_link4,
+            "secondarySubCategory_price4": secondarySubCategory_price4,
+
+            "secondarySubCategory_name5": secondarySubCategory_name5,
+            "secondarySubCategory_image5": secondarySubCategory_image5,
+            "secondarySubCategory_link5": secondarySubCategory_link5,
+            "secondarySubCategory_price5": secondarySubCategory_price5,
+
+            "secondarySubCategory_name6": secondarySubCategory_name6,
+            "secondarySubCategory_image6": secondarySubCategory_image6,
+            "secondarySubCategory_link6": secondarySubCategory_link6,
+            "secondarySubCategory_price6": secondarySubCategory_price6,
+
+            "secondarySubCategory_name7": secondarySubCategory_name7,
+            "secondarySubCategory_image7": secondarySubCategory_image7,
+            "secondarySubCategory_link7": secondarySubCategory_link7,
+            "secondarySubCategory_price7": secondarySubCategory_price7,
+
+            "secondarySubCategory_name8": secondarySubCategory_name8,
+            "secondarySubCategory_image8": secondarySubCategory_image8,
+            "secondarySubCategory_link8": secondarySubCategory_link8,
+            "secondarySubCategory_price8": secondarySubCategory_price8,
+
+            "secondarySubCategory_name9": secondarySubCategory_name9,
+            "secondarySubCategory_image9": secondarySubCategory_image9,
+            "secondarySubCategory_link9": secondarySubCategory_link9,
+            "secondarySubCategory_price9": secondarySubCategory_price9,
+
+            "secondarySubCategory_name10": secondarySubCategory_name10,
+            "secondarySubCategory_image10": secondarySubCategory_image10,
+            "secondarySubCategory_link10": secondarySubCategory_link10,
+            "secondarySubCategory_price10": secondarySubCategory_price10,
+
+            "secondarySubCategory_name11": secondarySubCategory_name11,
+            "secondarySubCategory_image11": secondarySubCategory_image11,
+            "secondarySubCategory_link11": secondarySubCategory_link11,
+            "secondarySubCategory_price11": secondarySubCategory_price11,
+
+            "secondarySubCategory_name12": secondarySubCategory_name12,
+            "secondarySubCategory_image12": secondarySubCategory_image12,
+            "secondarySubCategory_link12": secondarySubCategory_link12,
+            "secondarySubCategory_price12": secondarySubCategory_price12,
+
+            "secondarySubCategory_name13": secondarySubCategory_name13,
+            "secondarySubCategory_image13": secondarySubCategory_image13,
+            "secondarySubCategory_link13": secondarySubCategory_link13,
+            "secondarySubCategory_price13": secondarySubCategory_price13,
+
+            "secondarySubCategory_name14": secondarySubCategory_name14,
+            "secondarySubCategory_image14": secondarySubCategory_image14,
+            "secondarySubCategory_link14": secondarySubCategory_link14,
+            "secondarySubCategory_price14": secondarySubCategory_price14,
+
+            "secondarySubCategory_name15": secondarySubCategory_name15,
+            "secondarySubCategory_image15": secondarySubCategory_image15,
+            "secondarySubCategory_link15": secondarySubCategory_link15,
+            "secondarySubCategory_price15": secondarySubCategory_price15,
+
+            "secondarySubCategory_name16": secondarySubCategory_name16,
+            "secondarySubCategory_image16": secondarySubCategory_image16,
+            "secondarySubCategory_link16": secondarySubCategory_link16,
+            "secondarySubCategory_price16": secondarySubCategory_price16,
+
+            "secondarySubCategory_name17": secondarySubCategory_name17,
+            "secondarySubCategory_image17": secondarySubCategory_image17,
+            "secondarySubCategory_link17": secondarySubCategory_link17,
+            "secondarySubCategory_price17": secondarySubCategory_price17,
+
+            "secondarySubCategory_name18": secondarySubCategory_name18,
+            "secondarySubCategory_image18": secondarySubCategory_image18,
+            "secondarySubCategory_link18": secondarySubCategory_link18,
+            "secondarySubCategory_price18": secondarySubCategory_price18,
+
+            "secondarySubCategory_name19": secondarySubCategory_name19,
+            "secondarySubCategory_image19": secondarySubCategory_image19,
+            "secondarySubCategory_link19": secondarySubCategory_link19,
+            "secondarySubCategory_price19": secondarySubCategory_price19,
+
+            "secondarySubCategory_name20": secondarySubCategory_name20,
+            "secondarySubCategory_image20": secondarySubCategory_image20,
+            "secondarySubCategory_link20": secondarySubCategory_link20,
+            "secondarySubCategory_price20": secondarySubCategory_price20,
+
+            "secondarySubCategory_name21": secondarySubCategory_name21,
+            "secondarySubCategory_image21": secondarySubCategory_image21,
+            "secondarySubCategory_link21": secondarySubCategory_link21,
+            "secondarySubCategory_price21": secondarySubCategory_price21,
+
+            "secondarySubCategory_name22": secondarySubCategory_name22,
+            "secondarySubCategory_image22": secondarySubCategory_image22,
+            "secondarySubCategory_link22": secondarySubCategory_link22,
+            "secondarySubCategory_price22": secondarySubCategory_price22,
+
+            "secondarySubCategory_name23": secondarySubCategory_name23,
+            "secondarySubCategory_image23": secondarySubCategory_image23,
+            "secondarySubCategory_link23": secondarySubCategory_link23,
+            "secondarySubCategory_price23": secondarySubCategory_price23,
+
+            "secondarySubCategory_name24": secondarySubCategory_name24,
+            "secondarySubCategory_image24": secondarySubCategory_image24,
+            "secondarySubCategory_link24": secondarySubCategory_link24,
+            "secondarySubCategory_price24": secondarySubCategory_price24,
+
+            "secondarySubCategory_name25": secondarySubCategory_name25,
+            "secondarySubCategory_image25": secondarySubCategory_image25,
+            "secondarySubCategory_link25": secondarySubCategory_link25,
+            "secondarySubCategory_price25": secondarySubCategory_price25,
+
+            "secondarySubCategory_name26": secondarySubCategory_name26,
+            "secondarySubCategory_image26": secondarySubCategory_image26,
+            "secondarySubCategory_link26": secondarySubCategory_link26,
+            "secondarySubCategory_price26": secondarySubCategory_price26,
+
+        }

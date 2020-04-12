@@ -1,0 +1,356 @@
+/* Grid1 */
+.container1 {
+    display: grid;
+    grid-template-columns: 650px 650px;
+    grid-template-rows: 50px;
+    /* grid-template-areas: 
+        "main searchbox"
+        "main searchbox"; */
+    /* justify-items: center; */
+}
+
+
+/* .main {
+    grid-area: main;
+}
+
+.searchbox {
+    grid-area: sidebar;
+} */
+
+
+
+.main {
+    text-align: center;
+    background-color: indigo; color: white;
+    /* border-top-left-radius: 20px; border-bottom-left-radius: 20px; */
+}
+
+.searchbox {
+    text-align: center;
+    background-color: green; color: white;
+    border-top-right-radius: 50px; border-bottom-right-radius: 50px;
+}
+
+
+
+/* Grid2 */
+.container2 {
+    display: grid;
+    grid-template-columns: 1300px;
+    grid-template-rows: 50px;
+}
+
+#categories {
+    text-align: center;
+    background-color:white;
+}
+/* .container2{margin-top: -4.0%;} */
+
+
+
+/* Grid3 */
+.container3 {
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 250px;
+}
+
+
+/* Examples */
+
+/* .container3 {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+  } */
+
+/* #item1 {
+    background-color: yellow;
+}
+#item2 {
+    background-color: brown;
+}
+#item3 {
+    background-color: pink;
+}
+#item4 {
+    background-color: cyan;
+}
+#item5 {
+    background-color: gray;
+}
+#item6 {
+    background-color: mediumvioletred;
+}
+#item7 {
+    background-color: magenta;
+}
+#item8 {
+    background-color: maroon;
+}
+#item9 {
+    background-color: rebeccapurple;
+}
+#item10 {
+    background-color: red;
+} */
+
+
+
+#aircons {
+    text-align: center;
+    background-color: yellow;
+}
+#mobiles {
+    text-align: center;
+    background-color: brown;
+}
+#tvs {
+    text-align: center;
+    background-color: pink;
+}
+#fridge {
+    text-align: center;
+    background-color: cyan;
+}
+
+/* .container3{margin-top: -4.2%;} */
+
+
+
+
+/* Grid4 */
+.container4 {
+    display: grid;
+    grid-template-columns: 1300px;
+    grid-template-rows: 50px;
+}
+
+#mobilesHeading {
+    text-align: center;
+    background-color:white;
+}
+
+.container4{margin-top: 5.0%;}
+
+
+
+/* Grid5 */
+.container5 {
+    display: grid;
+    grid-template-columns: 216.6px 216.6px 216.6px 216.6px 216.6px 216.6px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+}
+
+#item1-1 {
+    text-align: center;
+    /* align-self: start; */
+    border: solid 1px;
+    background-color:white;
+}
+#item2 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item3 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item4 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item5 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item6 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item7 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item8 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item9 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item10 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item11 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item12 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item13 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item14 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item15 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item16 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item17 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item18 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item19 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item20 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item21 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item22 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item23 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item24 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item25 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item26 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+
+/* .container5{margin-top: -5.2%;} */
+
+
+
+
+/* Grid6 */
+.container6 {
+    display: grid;
+    grid-template-columns: 1300px;
+    grid-template-rows: 50px;
+}
+
+#secondCategories {
+    text-align: center;
+    background-color:white;
+}
+
+/* .container6{margin-top: 5.0%;} */
+
+
+
+
+/* Grid7 */
+.container7 {
+    display: grid;
+    grid-template-columns: 216.6px 216.6px 216.6px 216.6px 216.6px 216.6px;
+    grid-template-rows: 250px 250px 250px;
+}
+
+#item1 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item2 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item3 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item4 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item5 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item6 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item7 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item8 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item9 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item10 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item11 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item12 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item13 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item14 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item15 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+#item16 {
+    text-align: center; border: solid 1px;
+    background-color:white;
+}
+
+/* .container7{margin-top: -5.2%;} */
+
+
+
+
+
+
+/* Misc settings */
+strong {
+    color: red;
+}
