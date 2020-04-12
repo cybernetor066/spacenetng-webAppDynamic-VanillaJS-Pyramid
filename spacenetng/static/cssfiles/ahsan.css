@@ -29,7 +29,7 @@
 .searchbox {
     text-align: center;
     background-color: green; color: white;
-    border-top-right-radius: 50px; border-bottom-right-radius: 50px;
+    /* border-top-right-radius: 50px; border-bottom-right-radius: 50px; */
 }
 
 
@@ -43,8 +43,9 @@
 
 #categories {
     text-align: center;
-    background-color:white;
+    background-color: brown;
 }
+
 /* .container2{margin-top: -4.0%;} */
 
 
@@ -128,7 +129,7 @@
 
 #mobilesHeading {
     text-align: center;
-    background-color:white;
+    background-color: brown;
 }
 
 .container4{margin-top: 5.0%;}
@@ -145,107 +146,133 @@
 #item1-1 {
     text-align: center;
     /* align-self: start; */
-    border: solid 1px;
+    
+    /* border: solid 1px; */
     background-color:white;
 }
 #item2 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item3 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item4 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item5 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item6 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item7 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item8 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item9 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item10 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item11 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item12 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item13 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item14 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item15 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item16 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item17 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item18 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item19 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item20 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item21 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item22 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item23 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item24 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item25 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item26 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 
@@ -263,7 +290,7 @@
 
 #secondCategories {
     text-align: center;
-    background-color:white;
+    background-color: brown;
 }
 
 /* .container6{margin-top: 5.0%;} */
@@ -279,67 +306,83 @@
 }
 
 #item1 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item2 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item3 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item4 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item5 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item6 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item7 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item8 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item9 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item10 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item11 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item12 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item13 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item14 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item15 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 #item16 {
-    text-align: center; border: solid 1px;
+    text-align: center; 
+    /* border: solid 1px; */
     background-color:white;
 }
 

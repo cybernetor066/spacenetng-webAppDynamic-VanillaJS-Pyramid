@@ -47,41 +47,35 @@
      -->
 
     <div class="container2">
-      <div id="categories"><h2>Categories</h2></div>
+      <div id="categories"><h2 style="color: white;">Categories</h2></div>
     </div>
 
     <div class="container3">
       <div id="aircons">
-        <a href= ${category_AC_link}>
-          <img src=${category_AC_image} alt="">
-          <h2>${category_AC_name}</h2>
-        </a>
+        <img src=${category_AC_image} alt="">
+        <h2>${category_AC_name}</h2>
       </div>
 
       <div id="mobiles">
-        <a href= ${category_mobile_link}>
-          <img src=${category_mobile_image} alt="">
-          <h2>${category_mobile_name}</h2>
-        </a>
+        <img src=${category_mobile_image} alt="">
+        <h2>${category_mobile_name}</h2>
       </div>
+
       <div id="tvs">
-        <a href= ${category_tv_link}>
-          <img src=${category_tv_image} alt="">
-          <h2>${category_tv_name}</h2>
-        </a>
+        <img src=${category_tv_image} alt="">
+        <h2>${category_tv_name}</h2>
       </div>
+
       <div id="fridge">
-        <a href= ${category_fridge_link}>
-          <img src=${category_fridge_image} alt="">
-          <h2>${category_fridge_name}</h2>
-        </a>
+        <img src=${category_fridge_image} alt="">
+        <h2>${category_fridge_name}</h2>
       </div>
     </div>
 
 
 
     <div class="container4">
-      <div id="mobilesHeading"><h2>Latest Arrivals in Mobiles And Televisions</h2></div>
+      <div id="mobilesHeading"><h2 style="color: white;">Latest Arrivals in Mobiles And Televisions</h2></div>
     </div>
 
     <div class="container5">
@@ -95,37 +89,264 @@
         <strong>${secondarySubCategory_price1}</strong>
       </div>
 
-      <div id="item2"></div>
+      <div id="item2">
+        <a href="" >
+          <img src=${secondarySubCategory_image2} >
+          <br>${secondarySubCategory_name2}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price2}</strong>
+      </div>
 
-      <div id="item3"><p>Item3</p></div>
-      <div id="item4"><p>Item4</p></div>
-      <div id="item5"><p>Item5</p></div>
-      <div id="item6"><p>Item6</p></div>
-      <div id="item7"><p>Item7</p></div>
-      <div id="item8"><p>Item8</p></div>
-      <div id="item9"><p>Item9</p></div>
-      <div id="item10"><p>Item10</p></div>
-      <div id="item11"><p>Item11</p></div>
-      <div id="item12"><p>Item12</p></div>
-      <div id="item13"><p>Item13</p></div>
-      <div id="item14"><p>Item14</p></div>
-      <div id="item15"><p>Item15</p></div>
-      <div id="item16"><p>Item16</p></div>
-      <div id="item17"><p>Item17</p></div>
-      <div id="item18"><p>Item18</p></div>
-      <div id="item19"><p>Item19</p></div>
-      <div id="item20"><p>Item20</p></div>
-      <div id="item21"><p>Item21</p></div>
-      <div id="item22"><p>Item22</p></div>
-      <div id="item23"><p>Item23</p></div>
-      <div id="item24"><p>Item24</p></div>
-      <div id="item25"><p>Item25</p></div>
-      <div id="item26"><p>Item26</p></div>
+      <div id="item3">
+        <a href="" >
+          <img src=${secondarySubCategory_image3} >
+          <br>${secondarySubCategory_name3}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price3}</strong>
+      </div>
+
+      <div id="item4">
+        <a href="" >
+          <img src=${secondarySubCategory_image4} >
+          <br>${secondarySubCategory_name4}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price4}</strong>
+      </div>
+
+      <div id="item5">
+        <a href="" >
+          <img src=${secondarySubCategory_image5} >
+          <br>${secondarySubCategory_name5}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price5}</strong>
+      </div>
+
+      <div id="item6">
+        <a href="" >
+          <img src=${secondarySubCategory_image6} >
+          <br>${secondarySubCategory_name6}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price6}</strong>
+      </div>
+
+      <div id="item7">
+        <a href="" >
+          <img src=${secondarySubCategory_image7} >
+          <br>${secondarySubCategory_name7}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price7}</strong>
+      </div>
+
+      <div id="item8">
+        <a href="" >
+          <img src=${secondarySubCategory_image8} >
+          <br>${secondarySubCategory_name8}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price8}</strong>
+      </div>
+
+      <div id="item9">
+        <a href="" >
+          <img src=${secondarySubCategory_image9} >
+          <br>${secondarySubCategory_name9}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price9}</strong>
+      </div>
+
+      <div id="item10">
+        <a href="" >
+          <img src=${secondarySubCategory_image10} >
+          <br>${secondarySubCategory_name10}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price10}</strong>
+      </div>
+
+      <div id="item11">
+        <a href="" >
+          <img src=${secondarySubCategory_image11} >
+          <br>${secondarySubCategory_name11}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price11}</strong>
+      </div>
+
+      <div id="item12">
+        <a href="" >
+          <img src=${secondarySubCategory_image12} >
+          <br>${secondarySubCategory_name12}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price12}</strong>
+      </div>
+
+      <div id="item13">
+        <a href="" >
+          <img src=${secondarySubCategory_image13} >
+          <br>${secondarySubCategory_name13}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price13}</strong>
+      </div>
+
+      <div id="item14">
+        <a href="" >
+          <img src=${secondarySubCategory_image14} >
+          <br>${secondarySubCategory_name14}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price14}</strong>
+      </div>
+
+      <div id="item15">
+        <a href="" >
+          <img src=${secondarySubCategory_image15} >
+          <br>${secondarySubCategory_name15}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price15}</strong>
+      </div>
+
+      <div id="item16">
+        <a href="" >
+          <img src=${secondarySubCategory_image16} >
+          <br>${secondarySubCategory_name16}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price16}</strong>
+      </div>
+
+      <div id="item17">
+        <a href="" >
+          <img src=${secondarySubCategory_image17} >
+          <br>${secondarySubCategory_name17}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price17}</strong>
+      </div>
+
+      <div id="item18">
+        <a href="" >
+          <img src=${secondarySubCategory_image18} >
+          <br>${secondarySubCategory_name18}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price18}</strong>
+      </div>
+
+      <div id="item19">
+        <a href="" >
+          <img src=${secondarySubCategory_image19} >
+          <br>${secondarySubCategory_name19}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price19}</strong>
+      </div>
+
+      <div id="item20">
+        <a href="" >
+          <img src=${secondarySubCategory_image20} >
+          <br>${secondarySubCategory_name20}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price20}</strong>
+      </div>
+
+      <div id="item21">
+        <a href="" >
+          <img src=${secondarySubCategory_image21} >
+          <br>${secondarySubCategory_name21}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price21}</strong>
+      </div>
+
+      <div id="item22">
+        <a href="" >
+          <img src=${secondarySubCategory_image22} >
+          <br>${secondarySubCategory_name22}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price22}</strong>
+      </div>
+
+      <div id="item23">
+        <a href="" >
+          <img src=${secondarySubCategory_image23} >
+          <br>${secondarySubCategory_name23}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price23}</strong>
+      </div>
+
+      <div id="item24">
+        <a href="" >
+          <img src=${secondarySubCategory_image24} >
+          <br>${secondarySubCategory_name24}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price24}</strong>
+      </div>
+
+      <div id="item25">
+        <a href="" >
+          <img src=${secondarySubCategory_image25} >
+          <br>${secondarySubCategory_name25}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price25}</strong>
+      </div>
+
+      <div id="item26">
+        <a href="" >
+          <img src=${secondarySubCategory_image26} >
+          <br>${secondarySubCategory_name26}
+        </a>
+        <br/>
+        <br/>
+        <strong>${secondarySubCategory_price26}</strong>
+      </div>
     </div>
 
 
+
+
+
+
     <div class="container6">
-      <div id="secondCategories"><h2>Categories Latest</h2></div>
+      <div id="secondCategories"><h2 style="color: white;">Categories Latest</h2></div>
     </div>
 
     <div class="container7">
@@ -135,22 +356,111 @@
           <h3>${primarySubCategory_name1}</h3>
         </a>
       </div>
-      
-      <div id="item2"><p>Item2</p></div>
-      <div id="item3"><p>Item3</p></div>
-      <div id="item4"><p>Item4</p></div>
-      <div id="item5"><p>Item5</p></div>
-      <div id="item6"><p>Item6</p></div>
-      <div id="item7"><p>Item7</p></div>
-      <div id="item8"><p>Item8</p></div>
-      <div id="item9"><p>Item9</p></div>
-      <div id="item10"><p>Item10</p></div>
-      <div id="item11"><p>Item11</p></div>
-      <div id="item12"><p>Item12</p></div>
-      <div id="item13"><p>Item13</p></div>
-      <div id="item14"><p>Item14</p></div>
-      <div id="item15"><p>Item15</p></div>
-      <div id="item16"><p>Item16</p></div>
+
+      <div id="item2">
+        <a href="" >
+          <img src=${primarySubCategory_image2} alt="" >
+          <h3>${primarySubCategory_name2}</h3>
+        </a>
+      </div>
+
+      <div id="item3">
+        <a href="" >
+          <img src=${primarySubCategory_image3} alt="" >
+          <h3>${primarySubCategory_name3}</h3>
+        </a>
+      </div>
+
+      <div id="item4">
+        <a href="" >
+          <img src=${primarySubCategory_image4} alt="" >
+          <h3>${primarySubCategory_name4}</h3>
+        </a>
+      </div>
+
+      <div id="item5">
+        <a href="" >
+          <img src=${primarySubCategory_image5} alt="" >
+          <h3>${primarySubCategory_name5}</h3>
+        </a>
+      </div>
+
+      <div id="item6">
+        <a href="" >
+          <img src=${primarySubCategory_image6} alt="" >
+          <h3>${primarySubCategory_name6}</h3>
+        </a>      
+      </div>
+
+      <div id="item7">
+        <a href="" >
+          <img src=${primarySubCategory_image7} alt="" >
+          <h3>${primarySubCategory_name7}</h3>
+        </a>      
+      </div>
+
+      <div id="item8">
+        <a href="" >
+          <img src=${primarySubCategory_image8} alt="" >
+          <h3>${primarySubCategory_name8}</h3>
+        </a>
+      </div>
+
+      <div id="item9">
+        <a href="" >
+          <img src=${primarySubCategory_image9} alt="" >
+          <h3>${primarySubCategory_name9}</h3>
+        </a>      
+      </div>
+
+      <div id="item10">
+        <a href="" >
+          <img src=${primarySubCategory_image10} alt="" >
+          <h3>${primarySubCategory_name10}</h3>
+        </a>      
+      </div>
+
+      <div id="item11">
+        <a href="" >
+          <img src=${primarySubCategory_image11} alt="" >
+          <h3>${primarySubCategory_name11}</h3>
+        </a>      
+      </div>
+
+      <div id="item12">
+        <a href="" >
+          <img src=${primarySubCategory_image12} alt="" >
+          <h3>${primarySubCategory_name12}</h3>
+        </a>
+      </div>
+
+      <div id="item13">
+        <a href="" >
+          <img src=${primarySubCategory_image13} alt="" >
+          <!-- <h3>${primarySubCategory_name13}</h3> -->
+        </a>      
+      </div>
+
+      <div id="item14">
+        <a href="" >
+          <img src=${primarySubCategory_image14} alt="" >
+          <!-- <h3>${primarySubCategory_name14}</h3> -->
+        </a>      
+      </div>
+
+      <div id="item15">
+        <a href="" >
+          <img src=${primarySubCategory_image15} alt="" >
+          <!-- <h3>${primarySubCategory_name15}</h3> -->
+        </a>
+      </div>
+
+      <div id="item16">
+        <a href="" >
+          <img src=${primarySubCategory_image16} alt="" >
+          <!-- <h3>${primarySubCategory_name16}</h3> -->
+        </a>      
+      </div>
     </div>
 
 
