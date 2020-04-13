@@ -389,11 +389,44 @@
 /* .container7{margin-top: -5.2%;} */
 
 
-
-
-
-
 /* Misc settings */
 strong {
     color: red;
+}
+
+
+
+.container8Number1 {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 500px 50px;
+}
+
+
+.container8 {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 500px 50px;
+}
+/* .container8 {
+    align-content: start;
+} */
+
+
+
+.container9 {
+    display: grid;
+    grid-template-columns: 300px 700px;
+    grid-template-rows: 60px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px
+     70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+}
+
+.spec {
+    padding: 5px;
+    border: solid grey 1px; background-color: whitesmoke;
+}
+
+.specHeading {
+    padding: 5px; text-align: center;
+    border: solid grey 1px; background-color: rgb(228, 238, 238);
 }

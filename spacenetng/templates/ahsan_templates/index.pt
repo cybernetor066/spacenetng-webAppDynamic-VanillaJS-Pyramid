@@ -80,7 +80,7 @@
 
     <div class="container5">
       <div id="item1-1">
-        <a href=${secondarySubCategory_link1} >
+        <a href="${request.static_url('spacenetng:static/specifications/item1.html')}" >
           <img src=${secondarySubCategory_image1} >
           <br>${secondarySubCategory_name1}
         </a>
@@ -90,7 +90,7 @@
       </div>
 
       <div id="item2">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item2.html')}" >
           <img src=${secondarySubCategory_image2} >
           <br>${secondarySubCategory_name2}
         </a>
@@ -100,7 +100,7 @@
       </div>
 
       <div id="item3">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item3.html')}" >
           <img src=${secondarySubCategory_image3} >
           <br>${secondarySubCategory_name3}
         </a>
@@ -110,7 +110,7 @@
       </div>
 
       <div id="item4">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item4.html')}" >
           <img src=${secondarySubCategory_image4} >
           <br>${secondarySubCategory_name4}
         </a>
@@ -120,7 +120,7 @@
       </div>
 
       <div id="item5">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item5.html')}" >
           <img src=${secondarySubCategory_image5} >
           <br>${secondarySubCategory_name5}
         </a>
@@ -130,7 +130,7 @@
       </div>
 
       <div id="item6">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item6.html')}" >
           <img src=${secondarySubCategory_image6} >
           <br>${secondarySubCategory_name6}
         </a>
@@ -140,7 +140,7 @@
       </div>
 
       <div id="item7">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item7.html')}" >
           <img src=${secondarySubCategory_image7} >
           <br>${secondarySubCategory_name7}
         </a>
@@ -150,7 +150,7 @@
       </div>
 
       <div id="item8">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item8.html')}" >
           <img src=${secondarySubCategory_image8} >
           <br>${secondarySubCategory_name8}
         </a>
@@ -160,7 +160,7 @@
       </div>
 
       <div id="item9">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item9.html')}" >
           <img src=${secondarySubCategory_image9} >
           <br>${secondarySubCategory_name9}
         </a>
@@ -170,7 +170,7 @@
       </div>
 
       <div id="item10">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item10.html')}" >
           <img src=${secondarySubCategory_image10} >
           <br>${secondarySubCategory_name10}
         </a>
@@ -180,7 +180,7 @@
       </div>
 
       <div id="item11">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item11.html')}" >
           <img src=${secondarySubCategory_image11} >
           <br>${secondarySubCategory_name11}
         </a>
@@ -190,7 +190,7 @@
       </div>
 
       <div id="item12">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item12.html')}" >
           <img src=${secondarySubCategory_image12} >
           <br>${secondarySubCategory_name12}
         </a>
@@ -200,7 +200,7 @@
       </div>
 
       <div id="item13">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item13.html')}" >
           <img src=${secondarySubCategory_image13} >
           <br>${secondarySubCategory_name13}
         </a>
@@ -210,7 +210,7 @@
       </div>
 
       <div id="item14">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item14.html')}" >
           <img src=${secondarySubCategory_image14} >
           <br>${secondarySubCategory_name14}
         </a>
@@ -220,7 +220,7 @@
       </div>
 
       <div id="item15">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item15.html')}" >
           <img src=${secondarySubCategory_image15} >
           <br>${secondarySubCategory_name15}
         </a>
@@ -230,7 +230,7 @@
       </div>
 
       <div id="item16">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item16.html')}" >
           <img src=${secondarySubCategory_image16} >
           <br>${secondarySubCategory_name16}
         </a>
@@ -240,7 +240,7 @@
       </div>
 
       <div id="item17">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item17.html')}" >
           <img src=${secondarySubCategory_image17} >
           <br>${secondarySubCategory_name17}
         </a>
@@ -250,7 +250,7 @@
       </div>
 
       <div id="item18">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item18.html')}" >
           <img src=${secondarySubCategory_image18} >
           <br>${secondarySubCategory_name18}
         </a>
@@ -260,7 +260,7 @@
       </div>
 
       <div id="item19">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item19.html')}" >
           <img src=${secondarySubCategory_image19} >
           <br>${secondarySubCategory_name19}
         </a>
@@ -270,7 +270,7 @@
       </div>
 
       <div id="item20">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item20.html')}" >
           <img src=${secondarySubCategory_image20} >
           <br>${secondarySubCategory_name20}
         </a>
@@ -280,7 +280,7 @@
       </div>
 
       <div id="item21">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item21.html')}" >
           <img src=${secondarySubCategory_image21} >
           <br>${secondarySubCategory_name21}
         </a>
@@ -290,7 +290,7 @@
       </div>
 
       <div id="item22">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item22.html')}" >
           <img src=${secondarySubCategory_image22} >
           <br>${secondarySubCategory_name22}
         </a>
@@ -300,7 +300,7 @@
       </div>
 
       <div id="item23">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item23.html')}" >
           <img src=${secondarySubCategory_image23} >
           <br>${secondarySubCategory_name23}
         </a>
@@ -310,7 +310,7 @@
       </div>
 
       <div id="item24">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item24.html')}" >
           <img src=${secondarySubCategory_image24} >
           <br>${secondarySubCategory_name24}
         </a>
@@ -320,7 +320,7 @@
       </div>
 
       <div id="item25">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item25.html')}" >
           <img src=${secondarySubCategory_image25} >
           <br>${secondarySubCategory_name25}
         </a>
@@ -330,7 +330,7 @@
       </div>
 
       <div id="item26">
-        <a href="" >
+        <a href="${request.static_url('spacenetng:static/specifications/item26.html')}" >
           <img src=${secondarySubCategory_image26} >
           <br>${secondarySubCategory_name26}
         </a>
@@ -351,115 +351,83 @@
 
     <div class="container7">
       <div id="item1">
-        <a href=${primarySubCategory_link1} >
           <img src=${primarySubCategory_image1} alt="" >
           <h3>${primarySubCategory_name1}</h3>
-        </a>
       </div>
 
       <div id="item2">
-        <a href="" >
           <img src=${primarySubCategory_image2} alt="" >
           <h3>${primarySubCategory_name2}</h3>
-        </a>
       </div>
 
       <div id="item3">
-        <a href="" >
           <img src=${primarySubCategory_image3} alt="" >
           <h3>${primarySubCategory_name3}</h3>
-        </a>
       </div>
 
       <div id="item4">
-        <a href="" >
           <img src=${primarySubCategory_image4} alt="" >
           <h3>${primarySubCategory_name4}</h3>
-        </a>
       </div>
 
       <div id="item5">
-        <a href="" >
           <img src=${primarySubCategory_image5} alt="" >
           <h3>${primarySubCategory_name5}</h3>
-        </a>
       </div>
 
       <div id="item6">
-        <a href="" >
           <img src=${primarySubCategory_image6} alt="" >
           <h3>${primarySubCategory_name6}</h3>
-        </a>      
       </div>
 
       <div id="item7">
-        <a href="" >
           <img src=${primarySubCategory_image7} alt="" >
           <h3>${primarySubCategory_name7}</h3>
-        </a>      
       </div>
 
       <div id="item8">
-        <a href="" >
           <img src=${primarySubCategory_image8} alt="" >
           <h3>${primarySubCategory_name8}</h3>
-        </a>
       </div>
 
       <div id="item9">
-        <a href="" >
           <img src=${primarySubCategory_image9} alt="" >
           <h3>${primarySubCategory_name9}</h3>
-        </a>      
       </div>
 
       <div id="item10">
-        <a href="" >
           <img src=${primarySubCategory_image10} alt="" >
           <h3>${primarySubCategory_name10}</h3>
-        </a>      
       </div>
 
       <div id="item11">
-        <a href="" >
           <img src=${primarySubCategory_image11} alt="" >
           <h3>${primarySubCategory_name11}</h3>
-        </a>      
       </div>
 
       <div id="item12">
-        <a href="" >
           <img src=${primarySubCategory_image12} alt="" >
           <h3>${primarySubCategory_name12}</h3>
-        </a>
       </div>
 
       <div id="item13">
-        <a href="" >
           <img src=${primarySubCategory_image13} alt="" >
           <!-- <h3>${primarySubCategory_name13}</h3> -->
-        </a>      
       </div>
 
       <div id="item14">
-        <a href="" >
           <img src=${primarySubCategory_image14} alt="" >
           <!-- <h3>${primarySubCategory_name14}</h3> -->
-        </a>      
       </div>
 
       <div id="item15">
-        <a href="" >
           <img src=${primarySubCategory_image15} alt="" >
           <!-- <h3>${primarySubCategory_name15}</h3> -->
-        </a>
       </div>
 
       <div id="item16">
-        <a href="" >
           <img src=${primarySubCategory_image16} alt="" >
           <!-- <h3>${primarySubCategory_name16}</h3> -->
-        </a>      
       </div>
     </div>
 
